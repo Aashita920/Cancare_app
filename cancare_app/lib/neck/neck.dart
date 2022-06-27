@@ -53,7 +53,7 @@ class _NeckState extends State<Neck> {
                               },
                               pageBuilder:
                                   ((context, animation, secondaryAnimation) {
-                                return NeckKnow();
+                                return neckKnow();
                               })));
                     },
                     style: ElevatedButton.styleFrom(
@@ -103,7 +103,7 @@ class _NeckState extends State<Neck> {
                               },
                               pageBuilder:
                                   ((context, animation, secondaryAnimation) {
-                                return NeckKnow();
+                                return neckKnow();
                               })));
                     },
                     style: ElevatedButton.styleFrom(
@@ -158,7 +158,7 @@ class _NeckState extends State<Neck> {
                               },
                               pageBuilder:
                                   ((context, animation, secondaryAnimation) {
-                                return NeckKnow();
+                                return neckKnow();
                               })));
                     },
                     style: ElevatedButton.styleFrom(
@@ -208,7 +208,7 @@ class _NeckState extends State<Neck> {
                               },
                               pageBuilder:
                                   ((context, animation, secondaryAnimation) {
-                                return NeckKnow();
+                                return neckKnow();
                               })));
                     },
                     style: ElevatedButton.styleFrom(
@@ -267,7 +267,7 @@ class _NeckState extends State<Neck> {
                                   },
                                   pageBuilder: ((context, animation,
                                       secondaryAnimation) {
-                                    return NeckKnow();
+                                    return neckKnow();
                                   })));
                         },
                         style: ElevatedButton.styleFrom(

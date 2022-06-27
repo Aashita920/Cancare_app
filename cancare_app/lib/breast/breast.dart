@@ -2,9 +2,7 @@
 
 import 'package:cancare_app/bladder/bladderCauses.dart';
 import 'package:cancare_app/bladder/bladderHospitals.dart';
-import 'package:cancare_app/bladder/bladderKnow.dart';
 import 'package:cancare_app/bladder/bladderStories.dart';
-import 'package:cancare_app/bladder/bladderSymptoms.dart';
 import 'package:cancare_app/breast/breastKnow.dart';
 import 'package:cancare_app/breast/breastSymptoms.dart';
 import 'package:cancare_app/homepages/main.dart';

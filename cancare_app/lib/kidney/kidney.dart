@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:cancare_app/kidney/kidneyKnow.dart';
+import 'package:cancare_app/kidney/kidneySymptoms.dart';
 import 'package:flutter/material.dart';
 
 import '../homepages/types.dart';
@@ -104,7 +105,7 @@ class _KidneyState extends State<Kidney> {
                               },
                               pageBuilder:
                                   ((context, animation, secondaryAnimation) {
-                                return KidneyKnow();
+                                return KidneySymptom();
                               })));
                     },
                     style: ElevatedButton.styleFrom(

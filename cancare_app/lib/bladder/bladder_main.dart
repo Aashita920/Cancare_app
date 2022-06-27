@@ -19,7 +19,8 @@ class _bladderMainState extends State<bladderMain> {
 
   final _questions = const [
     {
-      'questionText': 'The color of your urine is pink, red, or cola-colored?',
+      'questionText':
+          'Is the color of your urine is pink, red, or cola-colored?',
       'answers': [
         {'text': 'Yes', 'score': 10},
         {'text': 'No', 'score': 0},
@@ -59,7 +60,7 @@ class _bladderMainState extends State<bladderMain> {
       ],
     },
     {
-      'questionText': 'Do you feel notice any abnormal change in your peeing?',
+      'questionText': 'Do you notice any abnormal change in your peeing?',
       'answers': [
         {'text': 'Yes', 'score': 10},
         {'text': 'No', 'score': 0},

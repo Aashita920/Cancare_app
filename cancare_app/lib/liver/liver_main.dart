@@ -1,17 +1,17 @@
 // ignore_for_file: camel_case_types, prefer_const_constructors, override_on_non_overriding_member
 
-import 'package:cancare_app/breast/quiz_breast.dart';
-import 'package:cancare_app/breast/result_breast.dart';
+import 'package:cancare_app/liver/quiz_liver.dart';
+import 'package:cancare_app/liver/result_liver.dart';
 import 'package:flutter/material.dart';
 
-class breastMain extends StatefulWidget {
-  const breastMain({Key? key}) : super(key: key);
+class LiverMain extends StatefulWidget {
+  const LiverMain({Key? key}) : super(key: key);
 
   @override
-  State<breastMain> createState() => _breastMainState();
+  State<LiverMain> createState() => _LiverMainState();
 }
 
-class _breastMainState extends State<breastMain> {
+class _LiverMainState extends State<LiverMain> {
   @override
   var _questionIndex = 0; //property
 
@@ -139,12 +139,12 @@ class _breastMainState extends State<breastMain> {
               child: SizedBox(
                 width: MediaQuery.of(context).size.width * 0.8,
                 child: _questionIndex < _questions.length
-                    ? BreastQuiz(
+                    ? LiverQuiz(
                         answerQuestion: _answerQuestion,
                         questionIndex: _questionIndex,
                         questions: _questions,
                       )
-                    : BreastResult(_totalScore, _resetQuiz),
+                    : LiverResult(_totalScore, _resetQuiz),
               ),
             ),
           ],

@@ -1,12 +1,13 @@
-// ignore_for_file: file_names, prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, camel_case_types, file_names
 
+import 'package:cancare_app/bladder/bladder.dart';
 import 'package:cancare_app/homepages/types.dart';
-import 'package:cancare_app/skin/skin.dart';
+import 'package:cancare_app/liver/liver_main.dart';
+import 'package:cancare_app/lungs/lungs_main.dart';
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
 
-class SkinKnow extends StatelessWidget {
-  const SkinKnow({Key? key}) : super(key: key);
+class LungsSymptom extends StatelessWidget {
+  const LungsSymptom({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -19,11 +20,11 @@ class SkinKnow extends StatelessWidget {
             backgroundColor: Colors.purple,
             title: Center(
               child: Text(
-                "Skin Cancer - Know About",
+                "Kidney Cancer - Symptoms",
                 style: TextStyle(
                     color: Colors.yellow,
-                    fontSize: 20.0,
-                    fontWeight: FontWeight.w700),
+                    fontSize: 22.0,
+                    fontWeight: FontWeight.w600),
               ),
             ),
           ),
@@ -32,31 +33,14 @@ class SkinKnow extends StatelessWidget {
           children: [
             Column(
               children: [
-                Row(
-                  children: [
-                    SizedBox(width: 40),
-                    Image(
-                      image: AssetImage(
-                        'assets/images/know.jpg',
-                      ),
-                      width: MediaQuery.of(context).size.width / 3,
-                      height: MediaQuery.of(context).size.height / 3,
-                    ),
-                    SizedBox(width: 40),
-                    Image(
-                      image: AssetImage(
-                        'assets/images/skin.jpg',
-                      ),
-                      width: MediaQuery.of(context).size.width / 3,
-                      height: MediaQuery.of(context).size.height / 3,
-                    ),
-                  ],
+                SizedBox(
+                  height: 30,
                 ),
                 SizedBox(
                   width: MediaQuery.of(context).size.width * 0.90,
                   child: Center(
                     child: Text(
-                      "Skin cancer — the abnormal growth of skin cells — most often develops on skin exposed to the sun. But this common form of cancer can also occur on areas of your skin not ordinarily exposed to sunlight. There are three major types of skin cancer — basal cell carcinoma, squamous cell carcinoma and melanoma. You can reduce your risk of skin cancer by limiting or avoiding exposure to ultraviolet (UV) radiation. Checking your skin for suspicious changes can help detect skin cancer at its earliest stages. Early detection of skin cancer gives you the greatest chance for successful skin cancer treatment.",
+                      "a) New lump in the breast or underarm (armpit). \n\nb) Thickening or swelling of part of the breast. \n\nc) Irritation or dimpling of breast skin. \n\nd) Redness or flaky skin in the nipple area or the breast. \n\ne) Pulling in of the nipple or pain in the nipple area. \n\nf) Nipple discharge other than breast milk, including blood. \n\ng) Any change in the size or the shape of the breast. \n\nh) Pain any area of the breast.",
                       style: TextStyle(
                           fontSize: 24,
                           fontWeight: FontWeight.w500,
@@ -65,35 +49,53 @@ class SkinKnow extends StatelessWidget {
                   ),
                 ),
                 SizedBox(
-                  height: 20,
+                  height: 10,
                 ),
                 Center(
                   child: SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.09,
+                    height: MediaQuery.of(context).size.height * 0.06,
                     width: MediaQuery.of(context).size.width * 0.35,
                     child: ElevatedButton(
-                      child: Text('More information',
+                      child: Text('Take Quiz',
                           style: TextStyle(
                               color: Colors.yellow,
-                              fontWeight: FontWeight.w700,
-                              fontSize: 18)),
+                              fontWeight: FontWeight.w800,
+                              fontSize: 21)),
                       style: ElevatedButton.styleFrom(
                           primary: Color.fromARGB(255, 155, 45, 174)),
-                      onPressed: () async {
-                        const url =
-                            'https://www.mayoclinic.org/diseases-conditions/skin-cancer/symptoms-causes/syc-20377605';
-                        if (await canLaunch(url)) {
-                          await launch(url);
-                        }
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            PageRouteBuilder(transitionsBuilder:
+                                (context, animation, animationTime, child) {
+                              return ScaleTransition(
+                                scale: animation,
+                                alignment: Alignment.center,
+                                child: child,
+                              );
+                            }, pageBuilder:
+                                ((context, animation, secondaryAnimation) {
+                              return LungsMain();
+                            })));
                       },
                     ),
                   ),
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(builder: (context) => Skin()),
-                    );
+                    Navigator.push(
+                        context,
+                        PageRouteBuilder(transitionsBuilder:
+                            (context, animation, animationTime, child) {
+                          return ScaleTransition(
+                            scale: animation,
+                            alignment: Alignment.center,
+                            child: child,
+                          );
+                        }, pageBuilder:
+                            ((context, animation, secondaryAnimation) {
+                          return Bladder();
+                        })));
                   },
                   style: ElevatedButton.styleFrom(
                       primary: Color.fromARGB(255, 155, 45, 174)),
@@ -117,9 +119,19 @@ class SkinKnow extends StatelessWidget {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(builder: (context) => Types()),
-                    );
+                    Navigator.push(
+                        context,
+                        PageRouteBuilder(transitionsBuilder:
+                            (context, animation, animationTime, child) {
+                          return ScaleTransition(
+                            scale: animation,
+                            alignment: Alignment.center,
+                            child: child,
+                          );
+                        }, pageBuilder:
+                            ((context, animation, secondaryAnimation) {
+                          return Types();
+                        })));
                   },
                   style: ElevatedButton.styleFrom(
                       primary: Color.fromARGB(255, 155, 45, 174)),
