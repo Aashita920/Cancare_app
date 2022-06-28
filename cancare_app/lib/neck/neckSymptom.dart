@@ -1,5 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, camel_case_types, file_names
 
+import 'package:cancare_app/homepages/types.dart';
+import 'package:cancare_app/neck/neck.dart';
 import 'package:cancare_app/neck/neck_main.dart';
 import 'package:flutter/material.dart';
 
@@ -91,7 +93,7 @@ class NeckSymptom extends StatelessWidget {
                           );
                         }, pageBuilder:
                             ((context, animation, secondaryAnimation) {
-                          return Bladder();
+                          return Neck();
                         })));
                   },
                   style: ElevatedButton.styleFrom(

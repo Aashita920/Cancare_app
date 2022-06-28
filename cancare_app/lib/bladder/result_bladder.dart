@@ -2,8 +2,6 @@
 
 import 'package:cancare_app/bladder/bladder.dart';
 import 'package:cancare_app/bladder/bladder_main.dart';
-import 'package:cancare_app/breast/breast.dart';
-import 'package:cancare_app/breast/breast_main.dart';
 import 'package:flutter/material.dart';
 
 class bladderResult extends StatelessWidget {

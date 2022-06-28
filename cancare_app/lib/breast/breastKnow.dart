@@ -1,10 +1,9 @@
 // ignore_for_file: file_names, prefer_const_constructors
 
+import 'package:cancare_app/breast/breast.dart';
 import 'package:cancare_app/homepages/types.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
-
-import '../bladder/bladder.dart';
 
 class BreastKnow extends StatelessWidget {
   const BreastKnow({Key? key}) : super(key: key);
@@ -93,7 +92,7 @@ class BreastKnow extends StatelessWidget {
                 ElevatedButton(
                   onPressed: () {
                     Navigator.of(context).push(
-                      MaterialPageRoute(builder: (context) => Bladder()),
+                      MaterialPageRoute(builder: (context) => Breast()),
                     );
                   },
                   style: ElevatedButton.styleFrom(

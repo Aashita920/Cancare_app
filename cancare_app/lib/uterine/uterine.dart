@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:cancare_app/uterine/uterineKnow.dart';
+import 'package:cancare_app/uterine/uterineSymptom.dart';
 import 'package:flutter/material.dart';
 import '../homepages/main.dart';
 import '../homepages/types.dart';
@@ -101,7 +102,7 @@ class _UterineState extends State<Uterine> {
                             },
                             pageBuilder:
                                 ((context, animation, secondaryAnimation) {
-                              return UterineKnow();
+                              return UterineSymptom();
                             })));
                   },
                   style: ElevatedButton.styleFrom(

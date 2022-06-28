@@ -1,7 +1,5 @@
 import 'package:cancare_app/bladder/answer_bladder.dart';
 import 'package:cancare_app/bladder/questions_bladder.dart';
-import 'package:cancare_app/breast/answer_breast.dart';
-
 import 'package:flutter/material.dart';
 
 class bladderQuiz extends StatelessWidget {

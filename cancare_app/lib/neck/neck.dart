@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:cancare_app/neck/neckKnow.dart';
+import 'package:cancare_app/neck/neck_main.dart';
 import 'package:flutter/material.dart';
 import '../homepages/types.dart';
 import '../homepages/main.dart';
@@ -103,7 +104,7 @@ class _NeckState extends State<Neck> {
                               },
                               pageBuilder:
                                   ((context, animation, secondaryAnimation) {
-                                return neckKnow();
+                                return NeckMain();
                               })));
                     },
                     style: ElevatedButton.styleFrom(

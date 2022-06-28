@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:cancare_app/thyroid/thyroidKnow.dart';
+import 'package:cancare_app/thyroid/thyroidSymptom.dart';
 import 'package:flutter/material.dart';
 import '../homepages/main.dart';
 import '../homepages/types.dart';
@@ -101,7 +102,7 @@ class _ThyroidState extends State<Thyroid> {
                             },
                             pageBuilder:
                                 ((context, animation, secondaryAnimation) {
-                              return ThyroidKnow();
+                              return ThyroidSymptom();
                             })));
                   },
                   style: ElevatedButton.styleFrom(

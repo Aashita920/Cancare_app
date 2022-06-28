@@ -2,6 +2,8 @@
 
 import 'package:cancare_app/lungs/quiz_lungs.dart';
 import 'package:cancare_app/lungs/result_lungs.dart';
+import 'package:cancare_app/neck/quiz_neck.dart';
+import 'package:cancare_app/neck/result_neck.dart';
 import 'package:flutter/material.dart';
 
 class NeckMain extends StatefulWidget {
@@ -139,12 +141,12 @@ class _NeckMainState extends State<NeckMain> {
               child: SizedBox(
                 width: MediaQuery.of(context).size.width * 0.8,
                 child: _questionIndex < _questions.length
-                    ? LungsQuiz(
+                    ? NeckQuiz(
                         answerQuestion: _answerQuestion,
                         questionIndex: _questionIndex,
                         questions: _questions,
                       )
-                    : LungsResult(_totalScore, _resetQuiz),
+                    : NeckResult(_totalScore, _resetQuiz),
               ),
             ),
           ],

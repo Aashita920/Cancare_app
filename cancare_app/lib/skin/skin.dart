@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:cancare_app/skin/skinKnow.dart';
+import 'package:cancare_app/skin/skin_main.dart';
 import 'package:flutter/material.dart';
 import '../homepages/main.dart';
 import '../homepages/types.dart';
@@ -101,7 +102,7 @@ class _SkinState extends State<Skin> {
                             },
                             pageBuilder:
                                 ((context, animation, secondaryAnimation) {
-                              return SkinKnow();
+                              return SkinMain();
                             })));
                   },
                   style: ElevatedButton.styleFrom(
