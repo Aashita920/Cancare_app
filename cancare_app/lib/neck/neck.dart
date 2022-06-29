@@ -40,22 +40,9 @@ class _NeckState extends State<Neck> {
                   ElevatedButton(
                     onPressed: () {
                       Navigator.push(
-                          context,
-                          PageRouteBuilder(
-                              transitionDuration:
-                                  Duration(microseconds: 1000100),
-                              transitionsBuilder:
-                                  (context, animation, animationTime, child) {
-                                return ScaleTransition(
-                                  scale: animation,
-                                  alignment: Alignment.center,
-                                  child: child,
-                                );
-                              },
-                              pageBuilder:
-                                  ((context, animation, secondaryAnimation) {
-                                return neckKnow();
-                              })));
+                        context,
+                        MaterialPageRoute(builder: (context) => neckKnow()),
+                      );
                     },
                     style: ElevatedButton.styleFrom(
                         primary: Color.fromARGB(255, 155, 45, 174)),
@@ -90,22 +77,9 @@ class _NeckState extends State<Neck> {
                   ElevatedButton(
                     onPressed: () {
                       Navigator.push(
-                          context,
-                          PageRouteBuilder(
-                              transitionDuration:
-                                  Duration(microseconds: 1000100),
-                              transitionsBuilder:
-                                  (context, animation, animationTime, child) {
-                                return ScaleTransition(
-                                  scale: animation,
-                                  alignment: Alignment.center,
-                                  child: child,
-                                );
-                              },
-                              pageBuilder:
-                                  ((context, animation, secondaryAnimation) {
-                                return NeckMain();
-                              })));
+                        context,
+                        MaterialPageRoute(builder: (context) => NeckMain()),
+                      );
                     },
                     style: ElevatedButton.styleFrom(
                         primary: Color.fromARGB(255, 155, 45, 174)),
@@ -145,22 +119,9 @@ class _NeckState extends State<Neck> {
                   ElevatedButton(
                     onPressed: () {
                       Navigator.push(
-                          context,
-                          PageRouteBuilder(
-                              transitionDuration:
-                                  Duration(microseconds: 1000100),
-                              transitionsBuilder:
-                                  (context, animation, animationTime, child) {
-                                return ScaleTransition(
-                                  scale: animation,
-                                  alignment: Alignment.center,
-                                  child: child,
-                                );
-                              },
-                              pageBuilder:
-                                  ((context, animation, secondaryAnimation) {
-                                return neckKnow();
-                              })));
+                        context,
+                        MaterialPageRoute(builder: (context) => neckKnow()),
+                      );
                     },
                     style: ElevatedButton.styleFrom(
                         primary: Color.fromARGB(255, 155, 45, 174)),
@@ -195,22 +156,9 @@ class _NeckState extends State<Neck> {
                   ElevatedButton(
                     onPressed: () {
                       Navigator.push(
-                          context,
-                          PageRouteBuilder(
-                              transitionDuration:
-                                  Duration(microseconds: 1000100),
-                              transitionsBuilder:
-                                  (context, animation, animationTime, child) {
-                                return ScaleTransition(
-                                  scale: animation,
-                                  alignment: Alignment.center,
-                                  child: child,
-                                );
-                              },
-                              pageBuilder:
-                                  ((context, animation, secondaryAnimation) {
-                                return neckKnow();
-                              })));
+                        context,
+                        MaterialPageRoute(builder: (context) => neckKnow()),
+                      );
                     },
                     style: ElevatedButton.styleFrom(
                         primary: Color.fromARGB(255, 155, 45, 174)),
@@ -254,22 +202,9 @@ class _NeckState extends State<Neck> {
                       ElevatedButton(
                         onPressed: () {
                           Navigator.push(
-                              context,
-                              PageRouteBuilder(
-                                  transitionDuration:
-                                      Duration(microseconds: 1000100),
-                                  transitionsBuilder: (context, animation,
-                                      animationTime, child) {
-                                    return ScaleTransition(
-                                      scale: animation,
-                                      alignment: Alignment.center,
-                                      child: child,
-                                    );
-                                  },
-                                  pageBuilder: ((context, animation,
-                                      secondaryAnimation) {
-                                    return neckKnow();
-                                  })));
+                            context,
+                            MaterialPageRoute(builder: (context) => neckKnow()),
+                          );
                         },
                         style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 155, 45, 174)),
@@ -310,22 +245,9 @@ class _NeckState extends State<Neck> {
                         child: ElevatedButton(
                           onPressed: () {
                             Navigator.push(
-                                context,
-                                PageRouteBuilder(
-                                    transitionDuration:
-                                        Duration(microseconds: 1000100),
-                                    transitionsBuilder: (context, animation,
-                                        animationTime, child) {
-                                      return ScaleTransition(
-                                        scale: animation,
-                                        alignment: Alignment.center,
-                                        child: child,
-                                      );
-                                    },
-                                    pageBuilder: ((context, animation,
-                                        secondaryAnimation) {
-                                      return Types();
-                                    })));
+                              context,
+                              MaterialPageRoute(builder: (context) => Types()),
+                            );
                           },
                           style: ElevatedButton.styleFrom(
                               primary: Color.fromARGB(255, 155, 45, 174)),
@@ -354,22 +276,9 @@ class _NeckState extends State<Neck> {
                         child: ElevatedButton(
                           onPressed: () {
                             Navigator.push(
-                                context,
-                                PageRouteBuilder(
-                                    transitionDuration:
-                                        Duration(microseconds: 1000100),
-                                    transitionsBuilder: (context, animation,
-                                        animationTime, child) {
-                                      return ScaleTransition(
-                                        scale: animation,
-                                        alignment: Alignment.center,
-                                        child: child,
-                                      );
-                                    },
-                                    pageBuilder: ((context, animation,
-                                        secondaryAnimation) {
-                                      return MyApp();
-                                    })));
+                              context,
+                              MaterialPageRoute(builder: (context) => MyApp()),
+                            );
                           },
                           style: ElevatedButton.styleFrom(
                               primary: Color.fromARGB(255, 155, 45, 174)),

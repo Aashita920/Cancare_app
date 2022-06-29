@@ -99,13 +99,16 @@ class _bladderMainState extends State<bladderMain> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(65.0),
+          preferredSize: Size.fromHeight(60.0),
           child: AppBar(
             backgroundColor: Colors.purple,
             title: Center(
               child: Text(
-                "Quiz for Bladder Cancer",
-                style: TextStyle(fontSize: 27.0),
+                "Quiz for bladder cancer",
+                style: TextStyle(
+                    color: Colors.yellow,
+                    fontSize: 30.0,
+                    fontFamily: 'Nexa-Bold'),
               ),
             ),
           ),

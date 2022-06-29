@@ -29,16 +29,16 @@ class _blkbladderState extends State<blkbladder> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(70.0),
+          preferredSize: Size.fromHeight(60.0),
           child: AppBar(
             backgroundColor: Colors.purple,
             title: Center(
               child: Text(
-                "BLK Super Speciality Hospital",
+                "BLK Speciality Hospital",
                 style: TextStyle(
                     color: Colors.yellow,
-                    fontSize: 22.0,
-                    fontWeight: FontWeight.w600),
+                    fontSize: 30.0,
+                    fontFamily: 'Nexa-Bold'),
               ),
             ),
           ),

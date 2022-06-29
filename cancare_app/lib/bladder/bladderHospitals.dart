@@ -1,7 +1,9 @@
 // ignore_for_file: file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'package:cancare_app/bladder/MedantaBladder.dart';
 import 'package:cancare_app/bladder/bladder.dart';
 import 'package:cancare_app/bladder/blkBladder.dart';
+import 'package:cancare_app/bladder/kokilabenBladder.dart';
 import 'package:flutter/material.dart';
 
 class BladderHospital extends StatelessWidget {
@@ -14,13 +16,16 @@ class BladderHospital extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(70.0),
+          preferredSize: Size.fromHeight(60.0),
           child: AppBar(
             backgroundColor: Colors.purple,
             title: Center(
               child: Text(
-                "Bladder Cancer - Hospitals",
-                style: TextStyle(color: Colors.yellow, fontSize: 27.0),
+                "Hospital",
+                style: TextStyle(
+                    color: Colors.yellow,
+                    fontSize: 30.0,
+                    fontFamily: 'Nexa-Bold'),
               ),
             ),
           ),
@@ -47,7 +52,7 @@ class BladderHospital extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      "BLK Super Speciality Hospital\n New Delhi, India",
+                      "\nBLK Super Speciality Hospital\n New Delhi, India\n",
                       textAlign: TextAlign.center,
                       style: TextStyle(
                           color: Colors.blueAccent,
@@ -60,8 +65,11 @@ class BladderHospital extends StatelessWidget {
                   children: [
                     GestureDetector(
                       onTap: () {
-                        Navigator.of(context).push(
-                            MaterialPageRoute(builder: (context) => Bladder()));
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => Medantabladder()),
+                        );
                       },
                       child: Image(
                         image: AssetImage(
@@ -71,12 +79,23 @@ class BladderHospital extends StatelessWidget {
                         height: MediaQuery.of(context).size.height / 4.5,
                       ),
                     ),
-                    Text(
-                      "Medanta - The Medicity Hospital",
-                      style: TextStyle(
-                          color: Colors.blueAccent,
-                          fontSize: 18,
-                          fontWeight: FontWeight.w700),
+                    Center(
+                      child: Text(
+                        "\nMedanta - The Medicity Hospital",
+                        style: TextStyle(
+                            color: Colors.blueAccent,
+                            fontSize: 20,
+                            fontWeight: FontWeight.w700),
+                      ),
+                    ),
+                    Center(
+                      child: Text(
+                        "Gurgaon, Haryana, India",
+                        style: TextStyle(
+                            color: Colors.blueAccent,
+                            fontSize: 20,
+                            fontWeight: FontWeight.w700),
+                      ),
                     ),
                   ],
                 ),
@@ -84,23 +103,34 @@ class BladderHospital extends StatelessWidget {
                   children: [
                     GestureDetector(
                       onTap: () {
-                        Navigator.of(context).push(
-                            MaterialPageRoute(builder: (context) => Bladder()));
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => Kokilabenbladder()));
                       },
                       child: Image(
                         image: AssetImage(
-                          'assets/images/BLK.png',
+                          'assets/images/kokilaben.jpg',
                         ),
                         width: MediaQuery.of(context).size.width,
                         height: MediaQuery.of(context).size.height / 4.5,
                       ),
                     ),
-                    Text(
-                      "BLK Super Speciality Hospital",
-                      style: TextStyle(
-                          color: Colors.blueAccent,
-                          fontSize: 18,
-                          fontWeight: FontWeight.w700),
+                    Center(
+                      child: Text(
+                        "\nKokilaben Dhirubhai Ambani Hospital ",
+                        style: TextStyle(
+                            color: Colors.blueAccent,
+                            fontSize: 20,
+                            fontWeight: FontWeight.w700),
+                      ),
+                    ),
+                    Center(
+                      child: Text(
+                        "Mumbai, India",
+                        style: TextStyle(
+                            color: Colors.blueAccent,
+                            fontSize: 20,
+                            fontWeight: FontWeight.w700),
+                      ),
                     ),
                     Center(
                       child: ElevatedButton(

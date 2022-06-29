@@ -40,22 +40,9 @@ class _LungsState extends State<Lungs> {
                   ElevatedButton(
                     onPressed: () {
                       Navigator.push(
-                          context,
-                          PageRouteBuilder(
-                              transitionDuration:
-                                  Duration(microseconds: 1000100),
-                              transitionsBuilder:
-                                  (context, animation, animationTime, child) {
-                                return ScaleTransition(
-                                  scale: animation,
-                                  alignment: Alignment.center,
-                                  child: child,
-                                );
-                              },
-                              pageBuilder:
-                                  ((context, animation, secondaryAnimation) {
-                                return LungsKnow();
-                              })));
+                        context,
+                        MaterialPageRoute(builder: (context) => LungsKnow()),
+                      );
                     },
                     style: ElevatedButton.styleFrom(
                         primary: Color.fromARGB(255, 155, 45, 174)),
@@ -90,22 +77,9 @@ class _LungsState extends State<Lungs> {
                   ElevatedButton(
                     onPressed: () {
                       Navigator.push(
-                          context,
-                          PageRouteBuilder(
-                              transitionDuration:
-                                  Duration(microseconds: 1000100),
-                              transitionsBuilder:
-                                  (context, animation, animationTime, child) {
-                                return ScaleTransition(
-                                  scale: animation,
-                                  alignment: Alignment.center,
-                                  child: child,
-                                );
-                              },
-                              pageBuilder:
-                                  ((context, animation, secondaryAnimation) {
-                                return LungsSymptom();
-                              })));
+                        context,
+                        MaterialPageRoute(builder: (context) => LungsSymptom()),
+                      );
                     },
                     style: ElevatedButton.styleFrom(
                         primary: Color.fromARGB(255, 155, 45, 174)),
@@ -145,22 +119,9 @@ class _LungsState extends State<Lungs> {
                   ElevatedButton(
                     onPressed: () {
                       Navigator.push(
-                          context,
-                          PageRouteBuilder(
-                              transitionDuration:
-                                  Duration(microseconds: 1000100),
-                              transitionsBuilder:
-                                  (context, animation, animationTime, child) {
-                                return ScaleTransition(
-                                  scale: animation,
-                                  alignment: Alignment.center,
-                                  child: child,
-                                );
-                              },
-                              pageBuilder:
-                                  ((context, animation, secondaryAnimation) {
-                                return LungsKnow();
-                              })));
+                        context,
+                        MaterialPageRoute(builder: (context) => LungsKnow()),
+                      );
                     },
                     style: ElevatedButton.styleFrom(
                         primary: Color.fromARGB(255, 155, 45, 174)),
@@ -195,22 +156,9 @@ class _LungsState extends State<Lungs> {
                   ElevatedButton(
                     onPressed: () {
                       Navigator.push(
-                          context,
-                          PageRouteBuilder(
-                              transitionDuration:
-                                  Duration(microseconds: 1000100),
-                              transitionsBuilder:
-                                  (context, animation, animationTime, child) {
-                                return ScaleTransition(
-                                  scale: animation,
-                                  alignment: Alignment.center,
-                                  child: child,
-                                );
-                              },
-                              pageBuilder:
-                                  ((context, animation, secondaryAnimation) {
-                                return LungsKnow();
-                              })));
+                        context,
+                        MaterialPageRoute(builder: (context) => LungsKnow()),
+                      );
                     },
                     style: ElevatedButton.styleFrom(
                         primary: Color.fromARGB(255, 155, 45, 174)),
@@ -254,22 +202,10 @@ class _LungsState extends State<Lungs> {
                       ElevatedButton(
                         onPressed: () {
                           Navigator.push(
-                              context,
-                              PageRouteBuilder(
-                                  transitionDuration:
-                                      Duration(microseconds: 1000100),
-                                  transitionsBuilder: (context, animation,
-                                      animationTime, child) {
-                                    return ScaleTransition(
-                                      scale: animation,
-                                      alignment: Alignment.center,
-                                      child: child,
-                                    );
-                                  },
-                                  pageBuilder: ((context, animation,
-                                      secondaryAnimation) {
-                                    return LungsKnow();
-                                  })));
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => LungsKnow()),
+                          );
                         },
                         style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 155, 45, 174)),
@@ -310,22 +246,9 @@ class _LungsState extends State<Lungs> {
                         child: ElevatedButton(
                           onPressed: () {
                             Navigator.push(
-                                context,
-                                PageRouteBuilder(
-                                    transitionDuration:
-                                        Duration(microseconds: 1000100),
-                                    transitionsBuilder: (context, animation,
-                                        animationTime, child) {
-                                      return ScaleTransition(
-                                        scale: animation,
-                                        alignment: Alignment.center,
-                                        child: child,
-                                      );
-                                    },
-                                    pageBuilder: ((context, animation,
-                                        secondaryAnimation) {
-                                      return Types();
-                                    })));
+                              context,
+                              MaterialPageRoute(builder: (context) => Types()),
+                            );
                           },
                           style: ElevatedButton.styleFrom(
                               primary: Color.fromARGB(255, 155, 45, 174)),
@@ -354,22 +277,9 @@ class _LungsState extends State<Lungs> {
                         child: ElevatedButton(
                           onPressed: () {
                             Navigator.push(
-                                context,
-                                PageRouteBuilder(
-                                    transitionDuration:
-                                        Duration(microseconds: 1000100),
-                                    transitionsBuilder: (context, animation,
-                                        animationTime, child) {
-                                      return ScaleTransition(
-                                        scale: animation,
-                                        alignment: Alignment.center,
-                                        child: child,
-                                      );
-                                    },
-                                    pageBuilder: ((context, animation,
-                                        secondaryAnimation) {
-                                      return MyApp();
-                                    })));
+                              context,
+                              MaterialPageRoute(builder: (context) => MyApp()),
+                            );
                           },
                           style: ElevatedButton.styleFrom(
                               primary: Color.fromARGB(255, 155, 45, 174)),

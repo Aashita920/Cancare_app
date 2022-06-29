@@ -43,18 +43,9 @@ class _BreastState extends State<Breast> {
                   ElevatedButton(
                     onPressed: () {
                       Navigator.push(
-                          context,
-                          PageRouteBuilder(transitionsBuilder:
-                              (context, animation, animationTime, child) {
-                            return ScaleTransition(
-                              scale: animation,
-                              alignment: Alignment.center,
-                              child: child,
-                            );
-                          }, pageBuilder:
-                              ((context, animation, secondaryAnimation) {
-                            return BreastKnow();
-                          })));
+                        context,
+                        MaterialPageRoute(builder: (context) => BreastKnow()),
+                      );
                     },
                     style: ElevatedButton.styleFrom(
                         primary: Color.fromARGB(128, 116, 31, 40)),
@@ -85,18 +76,10 @@ class _BreastState extends State<Breast> {
                   ElevatedButton(
                     onPressed: () {
                       Navigator.push(
-                          context,
-                          PageRouteBuilder(transitionsBuilder:
-                              (context, animation, animationTime, child) {
-                            return ScaleTransition(
-                              scale: animation,
-                              alignment: Alignment.center,
-                              child: child,
-                            );
-                          }, pageBuilder:
-                              ((context, animation, secondaryAnimation) {
-                            return breastSymptom();
-                          })));
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => breastSymptom()),
+                      );
                     },
                     style: ElevatedButton.styleFrom(
                         primary: Color.fromARGB(128, 116, 31, 40)),
@@ -132,18 +115,10 @@ class _BreastState extends State<Breast> {
                   ElevatedButton(
                     onPressed: () {
                       Navigator.push(
-                          context,
-                          PageRouteBuilder(transitionsBuilder:
-                              (context, animation, animationTime, child) {
-                            return ScaleTransition(
-                              scale: animation,
-                              alignment: Alignment.center,
-                              child: child,
-                            );
-                          }, pageBuilder:
-                              ((context, animation, secondaryAnimation) {
-                            return BladderCauses();
-                          })));
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => BladderCauses()),
+                      );
                     },
                     style: ElevatedButton.styleFrom(
                         primary: Color.fromARGB(128, 116, 31, 40)),
@@ -176,18 +151,10 @@ class _BreastState extends State<Breast> {
                   ElevatedButton(
                     onPressed: () {
                       Navigator.push(
-                          context,
-                          PageRouteBuilder(transitionsBuilder:
-                              (context, animation, animationTime, child) {
-                            return ScaleTransition(
-                              scale: animation,
-                              alignment: Alignment.center,
-                              child: child,
-                            );
-                          }, pageBuilder:
-                              ((context, animation, secondaryAnimation) {
-                            return BladderHospital();
-                          })));
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => BladderHospital()),
+                      );
                     },
                     style: ElevatedButton.styleFrom(
                         primary: Color.fromARGB(128, 116, 31, 40)),
@@ -228,18 +195,10 @@ class _BreastState extends State<Breast> {
                       ElevatedButton(
                         onPressed: () {
                           Navigator.push(
-                              context,
-                              PageRouteBuilder(transitionsBuilder:
-                                  (context, animation, animationTime, child) {
-                                return ScaleTransition(
-                                  scale: animation,
-                                  alignment: Alignment.center,
-                                  child: child,
-                                );
-                              }, pageBuilder:
-                                  ((context, animation, secondaryAnimation) {
-                                return BladderStory();
-                              })));
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => BladderStory()),
+                          );
                         },
                         style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(128, 116, 31, 40)),

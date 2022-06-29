@@ -5,14 +5,14 @@ import 'package:url_launcher/url_launcher.dart';
 
 import 'bladderHospitals.dart';
 
-class Medantabladder extends StatefulWidget {
-  Medantabladder({Key? key}) : super(key: key);
+class Kokilabenbladder extends StatefulWidget {
+  Kokilabenbladder({Key? key}) : super(key: key);
 
   @override
-  State<Medantabladder> createState() => _MedantabladderState();
+  State<Kokilabenbladder> createState() => _KokilabenbladderState();
 }
 
-class _MedantabladderState extends State<Medantabladder> {
+class _KokilabenbladderState extends State<Kokilabenbladder> {
   late Future<void> _launched;
   Future<void> _makecall(String url) async {
     if (await canLaunch(url)) {
@@ -34,7 +34,7 @@ class _MedantabladderState extends State<Medantabladder> {
             backgroundColor: Colors.purple,
             title: Center(
               child: Text(
-                "Medanta - The Medicity",
+                "Kokilaben Dhirubhai \n Ambani Hospital",
                 style: TextStyle(
                     color: Colors.yellow,
                     fontSize: 22.0,
@@ -63,7 +63,7 @@ class _MedantabladderState extends State<Medantabladder> {
                 SizedBox(
                   width: MediaQuery.of(context).size.width * 0.9,
                   child: Text(
-                    "Medanta Hospital was founded in 2009 by the renowned Cardiovascular and Cardiothoracic surgeon, Dr. NareshTrehan. The hospital is both NABH and NABL accredited. Centers of excellence include the Heart Institute, Institute of Neurosciences, Bone & Joint Institute, Kidney & Urology Institute, Cancer Institute and Division of Medical Oncology and Hematology. It is the first hospital in the country that offers Robotic Surgeries in Cardiology, Urology and Gynaecology. Awarded as the Best Multispecialty Hospital by Asia’s First Bloodless Bone Marrow Transplant HealthCare Global Enterprises (HCG) in 2010. Awarded the VC Circle Healthcare Awards for Single Specialty Healthcare Entity category in 2013.",
+                    " Kokilaben Dhirubhai Ambani Hospital, besides conducting various health camps at different locations, also holds several teaching programmes for lay people in first aid, life support and various areas of public health importance as a part of community outreach activities. Furthermore, Kokilaben Hospital has been supporting the initiative of helping the babies and children affected by congenital heart disorders through the 'Precious Heart' foundation – a social initiative that presents you with an opportunity to save a little heart, and to give someone a chance to live again.",
                     style: TextStyle(
                         color: Color.fromARGB(255, 222, 62, 13),
                         fontWeight: FontWeight.w500,
@@ -76,7 +76,7 @@ class _MedantabladderState extends State<Medantabladder> {
                 SizedBox(
                   width: MediaQuery.of(context).size.width * 0.8,
                   child: Text(
-                    "Address:\n          Medanta - The Medicity\n          Gurgaon 122001\n          India",
+                    "Address:\n          Rao Saheb, Achutrao \n          Patwardhan Marg, Four \n          Bungalows, Andheri West\n          Mumbai 400053\n          India",
                     style: TextStyle(
                         color: Color.fromARGB(255, 7, 7, 7),
                         fontWeight: FontWeight.w600,
@@ -95,7 +95,7 @@ class _MedantabladderState extends State<Medantabladder> {
                   style: ElevatedButton.styleFrom(
                       primary: Color.fromARGB(255, 155, 45, 174)),
                   onPressed: () async {
-                    const url = 'https://www.medanta.org';
+                    const url = 'https://www.kokilabenhospital.com';
                     if (await canLaunch(url)) {
                       await launch(url);
                     }
@@ -104,13 +104,13 @@ class _MedantabladderState extends State<Medantabladder> {
                 SizedBox(height: 20),
                 Image(
                   image: AssetImage(
-                    'assets/images/Medanta2.png',
+                    'assets/images/kokilaben2.png',
                   ),
                 ),
                 SizedBox(height: 5),
                 Image(
                   image: AssetImage(
-                    'assets/images/Medanta3.png',
+                    'assets/images/kokilaben3.jpg',
                   ),
                 ),
               ],
@@ -121,7 +121,7 @@ class _MedantabladderState extends State<Medantabladder> {
                   child: ElevatedButton(
                     onPressed: () {
                       setState(() {
-                        _launched = _makecall('tel:+91 1068');
+                        _launched = _makecall('tel:+912242699999');
                       });
                     },
                     style: ElevatedButton.styleFrom(
@@ -155,7 +155,7 @@ class _MedantabladderState extends State<Medantabladder> {
                   child: ElevatedButton(
                     onPressed: () {
                       setState(() {
-                        _launched = _makecall('tel:+91 1244141414');
+                        _launched = _makecall('tel:+91 022 4269 6969');
                       });
                     },
                     style: ElevatedButton.styleFrom(

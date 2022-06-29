@@ -40,21 +40,9 @@ class _ThyroidState extends State<Thyroid> {
                 ElevatedButton(
                   onPressed: () {
                     Navigator.push(
-                        context,
-                        PageRouteBuilder(
-                            transitionDuration: Duration(microseconds: 1000100),
-                            transitionsBuilder:
-                                (context, animation, animationTime, child) {
-                              return ScaleTransition(
-                                scale: animation,
-                                alignment: Alignment.center,
-                                child: child,
-                              );
-                            },
-                            pageBuilder:
-                                ((context, animation, secondaryAnimation) {
-                              return ThyroidKnow();
-                            })));
+                      context,
+                      MaterialPageRoute(builder: (context) => ThyroidKnow()),
+                    );
                   },
                   style: ElevatedButton.styleFrom(
                       primary: Color.fromARGB(255, 155, 45, 174)),
@@ -89,21 +77,9 @@ class _ThyroidState extends State<Thyroid> {
                 ElevatedButton(
                   onPressed: () {
                     Navigator.push(
-                        context,
-                        PageRouteBuilder(
-                            transitionDuration: Duration(microseconds: 1000100),
-                            transitionsBuilder:
-                                (context, animation, animationTime, child) {
-                              return ScaleTransition(
-                                scale: animation,
-                                alignment: Alignment.center,
-                                child: child,
-                              );
-                            },
-                            pageBuilder:
-                                ((context, animation, secondaryAnimation) {
-                              return ThyroidSymptom();
-                            })));
+                      context,
+                      MaterialPageRoute(builder: (context) => ThyroidSymptom()),
+                    );
                   },
                   style: ElevatedButton.styleFrom(
                       primary: Color.fromARGB(255, 155, 45, 174)),
@@ -143,21 +119,9 @@ class _ThyroidState extends State<Thyroid> {
                 ElevatedButton(
                   onPressed: () {
                     Navigator.push(
-                        context,
-                        PageRouteBuilder(
-                            transitionDuration: Duration(microseconds: 1000100),
-                            transitionsBuilder:
-                                (context, animation, animationTime, child) {
-                              return ScaleTransition(
-                                scale: animation,
-                                alignment: Alignment.center,
-                                child: child,
-                              );
-                            },
-                            pageBuilder:
-                                ((context, animation, secondaryAnimation) {
-                              return ThyroidKnow();
-                            })));
+                      context,
+                      MaterialPageRoute(builder: (context) => ThyroidKnow()),
+                    );
                   },
                   style: ElevatedButton.styleFrom(
                       primary: Color.fromARGB(255, 155, 45, 174)),
@@ -192,21 +156,9 @@ class _ThyroidState extends State<Thyroid> {
                 ElevatedButton(
                   onPressed: () {
                     Navigator.push(
-                        context,
-                        PageRouteBuilder(
-                            transitionDuration: Duration(microseconds: 1000100),
-                            transitionsBuilder:
-                                (context, animation, animationTime, child) {
-                              return ScaleTransition(
-                                scale: animation,
-                                alignment: Alignment.center,
-                                child: child,
-                              );
-                            },
-                            pageBuilder:
-                                ((context, animation, secondaryAnimation) {
-                              return ThyroidKnow();
-                            })));
+                      context,
+                      MaterialPageRoute(builder: (context) => ThyroidKnow()),
+                    );
                   },
                   style: ElevatedButton.styleFrom(
                       primary: Color.fromARGB(255, 155, 45, 174)),
@@ -250,22 +202,10 @@ class _ThyroidState extends State<Thyroid> {
                     ElevatedButton(
                       onPressed: () {
                         Navigator.push(
-                            context,
-                            PageRouteBuilder(
-                                transitionDuration:
-                                    Duration(microseconds: 1000100),
-                                transitionsBuilder:
-                                    (context, animation, animationTime, child) {
-                                  return ScaleTransition(
-                                    scale: animation,
-                                    alignment: Alignment.center,
-                                    child: child,
-                                  );
-                                },
-                                pageBuilder:
-                                    ((context, animation, secondaryAnimation) {
-                                  return ThyroidKnow();
-                                })));
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => ThyroidKnow()),
+                        );
                       },
                       style: ElevatedButton.styleFrom(
                           primary: Color.fromARGB(255, 155, 45, 174)),
@@ -305,22 +245,9 @@ class _ThyroidState extends State<Thyroid> {
                       child: ElevatedButton(
                         onPressed: () {
                           Navigator.push(
-                              context,
-                              PageRouteBuilder(
-                                  transitionDuration:
-                                      Duration(microseconds: 1000100),
-                                  transitionsBuilder: (context, animation,
-                                      animationTime, child) {
-                                    return ScaleTransition(
-                                      scale: animation,
-                                      alignment: Alignment.center,
-                                      child: child,
-                                    );
-                                  },
-                                  pageBuilder: ((context, animation,
-                                      secondaryAnimation) {
-                                    return Types();
-                                  })));
+                            context,
+                            MaterialPageRoute(builder: (context) => Types()),
+                          );
                         },
                         style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 155, 45, 174)),
@@ -349,22 +276,9 @@ class _ThyroidState extends State<Thyroid> {
                       child: ElevatedButton(
                         onPressed: () {
                           Navigator.push(
-                              context,
-                              PageRouteBuilder(
-                                  transitionDuration:
-                                      Duration(microseconds: 1000100),
-                                  transitionsBuilder: (context, animation,
-                                      animationTime, child) {
-                                    return ScaleTransition(
-                                      scale: animation,
-                                      alignment: Alignment.center,
-                                      child: child,
-                                    );
-                                  },
-                                  pageBuilder: ((context, animation,
-                                      secondaryAnimation) {
-                                    return MyApp();
-                                  })));
+                            context,
+                            MaterialPageRoute(builder: (context) => MyApp()),
+                          );
                         },
                         style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 155, 45, 174)),

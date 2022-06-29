@@ -27,7 +27,7 @@ class _TypesState extends State<Types> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(70.0),
+          preferredSize: Size.fromHeight(60.0),
           child: AppBar(
             backgroundColor: Colors.purple,
             title: Center(
@@ -35,7 +35,7 @@ class _TypesState extends State<Types> {
                 "Types",
                 style: TextStyle(
                     color: Colors.yellow,
-                    fontSize: 35.0,
+                    fontSize: 30.0,
                     fontFamily: 'Nexa-Bold'),
               ),
             ),

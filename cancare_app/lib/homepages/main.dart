@@ -25,16 +25,16 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(70.0),
+          preferredSize: Size.fromHeight(60.0),
           child: AppBar(
             backgroundColor: Colors.purple,
-            title: const Center(
+            title: Center(
               child: Text(
                 "CanCare",
                 style: TextStyle(
-                  color: Colors.yellow,
-                  fontSize: 35.0,
-                ),
+                    color: Colors.yellow,
+                    fontSize: 30.0,
+                    fontFamily: 'Nexa-Bold'),
               ),
             ),
           ),

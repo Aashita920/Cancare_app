@@ -16,16 +16,16 @@ class BladderSymptom extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(70.0),
+          preferredSize: Size.fromHeight(60.0),
           child: AppBar(
             backgroundColor: Colors.purple,
             title: Center(
               child: Text(
-                "Bladder Cancer - Symptoms",
+                "Symptoms",
                 style: TextStyle(
                     color: Colors.yellow,
-                    fontSize: 22.0,
-                    fontWeight: FontWeight.w600),
+                    fontSize: 30.0,
+                    fontFamily: 'Nexa-Bold'),
               ),
             ),
           ),

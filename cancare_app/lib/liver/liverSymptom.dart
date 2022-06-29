@@ -64,18 +64,9 @@ class LiverSymptom extends StatelessWidget {
                           primary: Color.fromARGB(255, 155, 45, 174)),
                       onPressed: () {
                         Navigator.push(
-                            context,
-                            PageRouteBuilder(transitionsBuilder:
-                                (context, animation, animationTime, child) {
-                              return ScaleTransition(
-                                scale: animation,
-                                alignment: Alignment.center,
-                                child: child,
-                              );
-                            }, pageBuilder:
-                                ((context, animation, secondaryAnimation) {
-                              return LiverMain();
-                            })));
+                          context,
+                          MaterialPageRoute(builder: (context) => LiverMain()),
+                        );
                       },
                     ),
                   ),
@@ -83,18 +74,9 @@ class LiverSymptom extends StatelessWidget {
                 ElevatedButton(
                   onPressed: () {
                     Navigator.push(
-                        context,
-                        PageRouteBuilder(transitionsBuilder:
-                            (context, animation, animationTime, child) {
-                          return ScaleTransition(
-                            scale: animation,
-                            alignment: Alignment.center,
-                            child: child,
-                          );
-                        }, pageBuilder:
-                            ((context, animation, secondaryAnimation) {
-                          return Bladder();
-                        })));
+                      context,
+                      MaterialPageRoute(builder: (context) => Bladder()),
+                    );
                   },
                   style: ElevatedButton.styleFrom(
                       primary: Color.fromARGB(255, 155, 45, 174)),
@@ -119,18 +101,9 @@ class LiverSymptom extends StatelessWidget {
                 ElevatedButton(
                   onPressed: () {
                     Navigator.push(
-                        context,
-                        PageRouteBuilder(transitionsBuilder:
-                            (context, animation, animationTime, child) {
-                          return ScaleTransition(
-                            scale: animation,
-                            alignment: Alignment.center,
-                            child: child,
-                          );
-                        }, pageBuilder:
-                            ((context, animation, secondaryAnimation) {
-                          return Types();
-                        })));
+                      context,
+                      MaterialPageRoute(builder: (context) => Types()),
+                    );
                   },
                   style: ElevatedButton.styleFrom(
                       primary: Color.fromARGB(255, 155, 45, 174)),

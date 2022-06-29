@@ -20,15 +20,15 @@ class _KnowMoreState extends State<KnowMore> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: PreferredSize(
-          preferredSize: const Size.fromHeight(70.0),
+          preferredSize: Size.fromHeight(60.0),
           child: AppBar(
             backgroundColor: Colors.purple,
-            title: const Center(
+            title: Center(
               child: Text(
-                "Know More",
+                "Know About",
                 style: TextStyle(
                     color: Colors.yellow,
-                    fontSize: 35.0,
+                    fontSize: 30.0,
                     fontFamily: 'Nexa-Bold'),
               ),
             ),

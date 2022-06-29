@@ -64,18 +64,9 @@ class breastSymptom extends StatelessWidget {
                           primary: Color.fromARGB(255, 155, 45, 174)),
                       onPressed: () {
                         Navigator.push(
-                            context,
-                            PageRouteBuilder(transitionsBuilder:
-                                (context, animation, animationTime, child) {
-                              return ScaleTransition(
-                                scale: animation,
-                                alignment: Alignment.center,
-                                child: child,
-                              );
-                            }, pageBuilder:
-                                ((context, animation, secondaryAnimation) {
-                              return breastMain();
-                            })));
+                          context,
+                          MaterialPageRoute(builder: (context) => breastMain()),
+                        );
                       },
                     ),
                   ),
@@ -83,18 +74,9 @@ class breastSymptom extends StatelessWidget {
                 ElevatedButton(
                   onPressed: () {
                     Navigator.push(
-                        context,
-                        PageRouteBuilder(transitionsBuilder:
-                            (context, animation, animationTime, child) {
-                          return ScaleTransition(
-                            scale: animation,
-                            alignment: Alignment.center,
-                            child: child,
-                          );
-                        }, pageBuilder:
-                            ((context, animation, secondaryAnimation) {
-                          return Breast();
-                        })));
+                      context,
+                      MaterialPageRoute(builder: (context) => Breast()),
+                    );
                   },
                   style: ElevatedButton.styleFrom(
                       primary: Color.fromARGB(255, 155, 45, 174)),
@@ -119,18 +101,9 @@ class breastSymptom extends StatelessWidget {
                 ElevatedButton(
                   onPressed: () {
                     Navigator.push(
-                        context,
-                        PageRouteBuilder(transitionsBuilder:
-                            (context, animation, animationTime, child) {
-                          return ScaleTransition(
-                            scale: animation,
-                            alignment: Alignment.center,
-                            child: child,
-                          );
-                        }, pageBuilder:
-                            ((context, animation, secondaryAnimation) {
-                          return Types();
-                        })));
+                      context,
+                      MaterialPageRoute(builder: (context) => Types()),
+                    );
                   },
                   style: ElevatedButton.styleFrom(
                       primary: Color.fromARGB(255, 155, 45, 174)),

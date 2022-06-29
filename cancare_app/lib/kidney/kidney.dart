@@ -41,22 +41,9 @@ class _KidneyState extends State<Kidney> {
                   ElevatedButton(
                     onPressed: () {
                       Navigator.push(
-                          context,
-                          PageRouteBuilder(
-                              transitionDuration:
-                                  Duration(microseconds: 1000100),
-                              transitionsBuilder:
-                                  (context, animation, animationTime, child) {
-                                return ScaleTransition(
-                                  scale: animation,
-                                  alignment: Alignment.center,
-                                  child: child,
-                                );
-                              },
-                              pageBuilder:
-                                  ((context, animation, secondaryAnimation) {
-                                return KidneyKnow();
-                              })));
+                        context,
+                        MaterialPageRoute(builder: (context) => KidneyKnow()),
+                      );
                     },
                     style: ElevatedButton.styleFrom(
                         primary: Color.fromARGB(255, 155, 45, 174)),
@@ -91,22 +78,10 @@ class _KidneyState extends State<Kidney> {
                   ElevatedButton(
                     onPressed: () {
                       Navigator.push(
-                          context,
-                          PageRouteBuilder(
-                              transitionDuration:
-                                  Duration(microseconds: 1000100),
-                              transitionsBuilder:
-                                  (context, animation, animationTime, child) {
-                                return ScaleTransition(
-                                  scale: animation,
-                                  alignment: Alignment.center,
-                                  child: child,
-                                );
-                              },
-                              pageBuilder:
-                                  ((context, animation, secondaryAnimation) {
-                                return KidneySymptom();
-                              })));
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => KidneySymptom()),
+                      );
                     },
                     style: ElevatedButton.styleFrom(
                         primary: Color.fromARGB(255, 155, 45, 174)),
@@ -146,22 +121,9 @@ class _KidneyState extends State<Kidney> {
                   ElevatedButton(
                     onPressed: () {
                       Navigator.push(
-                          context,
-                          PageRouteBuilder(
-                              transitionDuration:
-                                  Duration(microseconds: 1000100),
-                              transitionsBuilder:
-                                  (context, animation, animationTime, child) {
-                                return ScaleTransition(
-                                  scale: animation,
-                                  alignment: Alignment.center,
-                                  child: child,
-                                );
-                              },
-                              pageBuilder:
-                                  ((context, animation, secondaryAnimation) {
-                                return KidneyKnow();
-                              })));
+                        context,
+                        MaterialPageRoute(builder: (context) => KidneyKnow()),
+                      );
                     },
                     style: ElevatedButton.styleFrom(
                         primary: Color.fromARGB(255, 155, 45, 174)),
@@ -196,22 +158,9 @@ class _KidneyState extends State<Kidney> {
                   ElevatedButton(
                     onPressed: () {
                       Navigator.push(
-                          context,
-                          PageRouteBuilder(
-                              transitionDuration:
-                                  Duration(microseconds: 1000100),
-                              transitionsBuilder:
-                                  (context, animation, animationTime, child) {
-                                return ScaleTransition(
-                                  scale: animation,
-                                  alignment: Alignment.center,
-                                  child: child,
-                                );
-                              },
-                              pageBuilder:
-                                  ((context, animation, secondaryAnimation) {
-                                return KidneyKnow();
-                              })));
+                        context,
+                        MaterialPageRoute(builder: (context) => KidneyKnow()),
+                      );
                     },
                     style: ElevatedButton.styleFrom(
                         primary: Color.fromARGB(255, 155, 45, 174)),
@@ -255,22 +204,10 @@ class _KidneyState extends State<Kidney> {
                       ElevatedButton(
                         onPressed: () {
                           Navigator.push(
-                              context,
-                              PageRouteBuilder(
-                                  transitionDuration:
-                                      Duration(microseconds: 1000100),
-                                  transitionsBuilder: (context, animation,
-                                      animationTime, child) {
-                                    return ScaleTransition(
-                                      scale: animation,
-                                      alignment: Alignment.center,
-                                      child: child,
-                                    );
-                                  },
-                                  pageBuilder: ((context, animation,
-                                      secondaryAnimation) {
-                                    return KidneyKnow();
-                                  })));
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => KidneyKnow()),
+                          );
                         },
                         style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 155, 45, 174)),
@@ -311,22 +248,9 @@ class _KidneyState extends State<Kidney> {
                         child: ElevatedButton(
                           onPressed: () {
                             Navigator.push(
-                                context,
-                                PageRouteBuilder(
-                                    transitionDuration:
-                                        Duration(microseconds: 1000100),
-                                    transitionsBuilder: (context, animation,
-                                        animationTime, child) {
-                                      return ScaleTransition(
-                                        scale: animation,
-                                        alignment: Alignment.center,
-                                        child: child,
-                                      );
-                                    },
-                                    pageBuilder: ((context, animation,
-                                        secondaryAnimation) {
-                                      return Types();
-                                    })));
+                              context,
+                              MaterialPageRoute(builder: (context) => Types()),
+                            );
                           },
                           style: ElevatedButton.styleFrom(
                               primary: Color.fromARGB(255, 155, 45, 174)),
@@ -355,22 +279,9 @@ class _KidneyState extends State<Kidney> {
                         child: ElevatedButton(
                           onPressed: () {
                             Navigator.push(
-                                context,
-                                PageRouteBuilder(
-                                    transitionDuration:
-                                        Duration(microseconds: 1000100),
-                                    transitionsBuilder: (context, animation,
-                                        animationTime, child) {
-                                      return ScaleTransition(
-                                        scale: animation,
-                                        alignment: Alignment.center,
-                                        child: child,
-                                      );
-                                    },
-                                    pageBuilder: ((context, animation,
-                                        secondaryAnimation) {
-                                      return MyApp();
-                                    })));
+                              context,
+                              MaterialPageRoute(builder: (context) => MyApp()),
+                            );
                           },
                           style: ElevatedButton.styleFrom(
                               primary: Color.fromARGB(255, 155, 45, 174)),

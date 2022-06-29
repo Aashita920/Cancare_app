@@ -16,13 +16,16 @@ class BladderCauses extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(70.0),
+          preferredSize: Size.fromHeight(60.0),
           child: AppBar(
             backgroundColor: Colors.purple,
             title: Center(
               child: Text(
-                "Bladder Cancer - Causes",
-                style: TextStyle(color: Colors.yellow, fontSize: 27.0),
+                "Causes",
+                style: TextStyle(
+                    color: Colors.yellow,
+                    fontSize: 30.0,
+                    fontFamily: 'Nexa-Bold'),
               ),
             ),
           ),
