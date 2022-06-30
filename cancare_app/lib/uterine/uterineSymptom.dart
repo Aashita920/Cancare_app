@@ -1,11 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, camel_case_types, file_names
 
 import 'package:cancare_app/homepages/types.dart';
-import 'package:cancare_app/neck/neck.dart';
-import 'package:cancare_app/neck/neck_main.dart';
-import 'package:cancare_app/skin/skin_main.dart';
-import 'package:cancare_app/thyroid/thyroid.dart';
-import 'package:cancare_app/thyroid/thyroid_main.dart';
 import 'package:cancare_app/uterine/uterine.dart';
 import 'package:cancare_app/uterine/uterine_main.dart';
 import 'package:flutter/material.dart';

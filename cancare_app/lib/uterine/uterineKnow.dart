@@ -1,4 +1,4 @@
-// ignore_for_file: file_names, prefer_const_constructors
+// ignore_for_file: file_names, prefer_const_constructors, deprecated_member_use, prefer_const_literals_to_create_immutables
 
 import 'package:cancare_app/homepages/types.dart';
 import 'package:cancare_app/uterine/uterine.dart';

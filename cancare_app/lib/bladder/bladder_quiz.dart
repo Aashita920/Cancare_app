@@ -1,3 +1,5 @@
+// ignore_for_file: camel_case_types, use_key_in_widget_constructors, prefer_const_constructors_in_immutables
+
 import 'package:cancare_app/bladder/answer_bladder.dart';
 import 'package:cancare_app/bladder/questions_bladder.dart';
 import 'package:flutter/material.dart';

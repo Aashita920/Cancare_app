@@ -1,9 +1,9 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
-import 'package:cancare_app/bladder/bladderCauses.dart';
-import 'package:cancare_app/bladder/bladderHospitals.dart';
-import 'package:cancare_app/bladder/bladderStories.dart';
+import 'package:cancare_app/breast/breastCauses.dart';
+import 'package:cancare_app/breast/breastHospital.dart';
 import 'package:cancare_app/breast/breastKnow.dart';
+import 'package:cancare_app/breast/breastStories.dart';
 import 'package:cancare_app/breast/breastSymptoms.dart';
 import 'package:cancare_app/homepages/main.dart';
 import 'package:cancare_app/homepages/types.dart';
@@ -116,8 +116,7 @@ class _BreastState extends State<Breast> {
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(
-                            builder: (context) => BladderCauses()),
+                        MaterialPageRoute(builder: (context) => BreastCauses()),
                       );
                     },
                     style: ElevatedButton.styleFrom(
@@ -153,7 +152,7 @@ class _BreastState extends State<Breast> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => BladderHospital()),
+                            builder: (context) => BreastHospital()),
                       );
                     },
                     style: ElevatedButton.styleFrom(
@@ -197,7 +196,7 @@ class _BreastState extends State<Breast> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => BladderStory()),
+                                builder: (context) => BreastStory()),
                           );
                         },
                         style: ElevatedButton.styleFrom(

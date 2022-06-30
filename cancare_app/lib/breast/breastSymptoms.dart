@@ -19,7 +19,7 @@ class breastSymptom extends StatelessWidget {
             backgroundColor: Colors.purple,
             title: Center(
               child: Text(
-                "Breast Cancer - Symptoms",
+                "Symptoms",
                 style: TextStyle(
                     color: Colors.yellow,
                     fontSize: 22.0,

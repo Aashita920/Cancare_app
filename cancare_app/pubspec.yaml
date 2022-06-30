@@ -80,6 +80,18 @@ flutter:
     - assets/images/causes.png
     - assets/images/hospital.png
     - assets/images/stories.jpg
+    - assets/images/fortis.jpg
+    - assets/images/fortis1.jpg
+    - assets/images/fortis2.jpg
+    - assets/images/fortis3.jpg
+    - assets/images/narayana.jpg
+    - assets/images/narayana1.jpg
+    - assets/images/narayana2.jpg
+    - assets/images/narayana3.jpg
+    - assets/images/max.png
+    - assets/images/max1.jpg
+    - assets/images/max2.jpg
+    - assets/images/max3.jpg
     - assets/images/Medanta.png
     - assets/images/Medanta1.png
     - assets/images/Medanta2.png
@@ -90,6 +102,7 @@ flutter:
     - assets/images/kokilaben3.jpg
     - assets/images/bladderStroy.png
     - assets/images/bladderStroy2.png
+    - assets/images/breaststory1.png
     - assets/images/SubhashBLK.jpg
     - assets/images/SurenderBLK.jpg
     - assets/images/RajivBLK.jpg

@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, camel_case_types, file_names
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, camel_case_types, file_names, unused_import
 
 import 'package:cancare_app/homepages/types.dart';
 import 'package:cancare_app/neck/neck.dart';

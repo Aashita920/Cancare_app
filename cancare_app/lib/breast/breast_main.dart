@@ -1,4 +1,4 @@
-// ignore_for_file: camel_case_types, prefer_const_constructors, override_on_non_overriding_member
+// ignore_for_file: camel_case_types, prefer_const_constructors, override_on_non_overriding_member, avoid_print
 
 import 'package:cancare_app/breast/quiz_breast.dart';
 import 'package:cancare_app/breast/result_breast.dart';

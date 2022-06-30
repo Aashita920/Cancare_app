@@ -90,7 +90,7 @@ class BladderHospital extends StatelessWidget {
                     ),
                     Center(
                       child: Text(
-                        "Gurgaon, Haryana, India",
+                        "Gurgaon, Haryana, India\n",
                         style: TextStyle(
                             color: Colors.blueAccent,
                             fontSize: 20,

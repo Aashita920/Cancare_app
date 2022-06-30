@@ -1,3 +1,5 @@
+// ignore_for_file: use_key_in_widget_constructors, prefer_const_constructors_in_immutables, prefer_const_constructors, prefer_const_literals_to_create_immutables
+
 import 'package:cancare_app/thyroid/thyroid.dart';
 import 'package:cancare_app/thyroid/thyroid_main.dart';
 import 'package:flutter/material.dart';

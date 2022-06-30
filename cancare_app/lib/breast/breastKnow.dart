@@ -1,4 +1,4 @@
-// ignore_for_file: file_names, prefer_const_constructors
+// ignore_for_file: file_names, prefer_const_constructors, deprecated_member_use, prefer_const_literals_to_create_immutables
 
 import 'package:cancare_app/breast/breast.dart';
 import 'package:cancare_app/homepages/types.dart';
@@ -19,7 +19,7 @@ class BreastKnow extends StatelessWidget {
             backgroundColor: Colors.purple,
             title: Center(
               child: Text(
-                "Breast Cancer - Know About",
+                "Know About",
                 style: TextStyle(
                     color: Colors.yellow,
                     fontSize: 20.0,
