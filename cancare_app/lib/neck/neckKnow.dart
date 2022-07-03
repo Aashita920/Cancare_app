@@ -1,7 +1,7 @@
 // ignore_for_file: file_names, prefer_const_constructors, camel_case_types, prefer_const_literals_to_create_immutables, deprecated_member_use
 
 import 'package:cancare_app/homepages/types.dart';
-import 'package:cancare_app/kidney/kidney.dart';
+import 'package:cancare_app/neck/neck.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -14,16 +14,16 @@ class neckKnow extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(70.0),
+          preferredSize: Size.fromHeight(60.0),
           child: AppBar(
             backgroundColor: Colors.purple,
             title: Center(
               child: Text(
-                "Neck Cancer - Know About",
+                "Know About",
                 style: TextStyle(
                     color: Colors.yellow,
-                    fontSize: 20.0,
-                    fontWeight: FontWeight.w700),
+                    fontSize: 30.0,
+                    fontFamily: 'Nexa-Bold'),
               ),
             ),
           ),
@@ -92,7 +92,7 @@ class neckKnow extends StatelessWidget {
                 ElevatedButton(
                   onPressed: () {
                     Navigator.of(context).push(
-                      MaterialPageRoute(builder: (context) => Kidney()),
+                      MaterialPageRoute(builder: (context) => Neck()),
                     );
                   },
                   style: ElevatedButton.styleFrom(

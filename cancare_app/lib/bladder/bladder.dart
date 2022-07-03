@@ -245,21 +245,21 @@ class _BladderState extends State<Bladder> {
                             );
                           },
                           style: ElevatedButton.styleFrom(
-                              primary: Color.fromARGB(255, 155, 45, 174)),
+                              primary: Color.fromARGB(128, 116, 31, 40)),
                           child: Row(
                             mainAxisSize: MainAxisSize.min,
                             children: [
                               Icon(
                                 Icons.navigate_before,
                                 size: 30.0,
-                                color: Colors.yellow,
                               ),
                               SizedBox(
                                 width: 7,
                               ),
                               Text(
                                 "Types",
-                                style: TextStyle(fontSize: 27.0),
+                                style: TextStyle(
+                                    fontSize: 27.0, fontFamily: 'Nexa-Bold'),
                               ),
                             ],
                           ),
@@ -274,21 +274,23 @@ class _BladderState extends State<Bladder> {
                             );
                           },
                           style: ElevatedButton.styleFrom(
-                              primary: Color.fromARGB(255, 155, 45, 174)),
+                              primary: Color.fromARGB(128, 116, 31, 40)),
                           child: Row(
                             mainAxisSize: MainAxisSize.min,
                             children: [
                               Icon(
                                 Icons.navigate_before,
                                 size: 30.0,
-                                color: Colors.yellow,
                               ),
                               SizedBox(
                                 width: 7,
                               ),
                               Text(
                                 "Home",
-                                style: TextStyle(fontSize: 27.0),
+                                style: TextStyle(
+                                  fontFamily: 'Nexa-Bold',
+                                  fontSize: 27,
+                                ),
                               ),
                             ],
                           ),

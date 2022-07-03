@@ -1,7 +1,7 @@
 // ignore_for_file: use_key_in_widget_constructors, prefer_const_constructors_in_immutables
 
-import 'package:cancare_app/breast/answer_breast.dart';
-import 'package:cancare_app/breast/questions_breast.dart';
+import 'package:cancare_app/uterine/answer_uterine.dart';
+import 'package:cancare_app/uterine/questions_uterine.dart';
 import 'package:flutter/material.dart';
 
 class UterineQuiz extends StatelessWidget {
@@ -17,10 +17,10 @@ class UterineQuiz extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        BreastQuestion(questions[questionIndex]['questionText'] as String),
+        UterineQuestion(questions[questionIndex]['questionText'] as String),
         ...(questions[questionIndex]['answers'] as List<Map<String, Object>>)
             .map((answer) {
-          return BreastAnswer(() => answerQuestion(answer['score'] as int),
+          return UterineAnswer(() => answerQuestion(answer['score'] as int),
               answer['text'] as String);
         }).toList(),
       ],

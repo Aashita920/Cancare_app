@@ -2,6 +2,7 @@
 
 import 'package:cancare_app/bladder/bladder.dart';
 import 'package:cancare_app/homepages/types.dart';
+import 'package:cancare_app/kidney/kidney.dart';
 import 'package:cancare_app/kidney/kidney_main.dart';
 import 'package:flutter/material.dart';
 
@@ -14,16 +15,16 @@ class KidneySymptom extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(70.0),
+          preferredSize: Size.fromHeight(60.0),
           child: AppBar(
             backgroundColor: Colors.purple,
             title: Center(
               child: Text(
-                "Kidney Cancer - Symptoms",
+                "Symptoms",
                 style: TextStyle(
                     color: Colors.yellow,
-                    fontSize: 22.0,
-                    fontWeight: FontWeight.w600),
+                    fontSize: 30.0,
+                    fontFamily: 'Nexa-Bold'),
               ),
             ),
           ),
@@ -39,7 +40,7 @@ class KidneySymptom extends StatelessWidget {
                   width: MediaQuery.of(context).size.width * 0.90,
                   child: Center(
                     child: Text(
-                      "a) New lump in the breast or underarm (armpit). \n\nb) Thickening or swelling of part of the breast. \n\nc) Irritation or dimpling of breast skin. \n\nd) Redness or flaky skin in the nipple area or the breast. \n\ne) Pulling in of the nipple or pain in the nipple area. \n\nf) Nipple discharge other than breast milk, including blood. \n\ng) Any change in the size or the shape of the breast. \n\nh) Pain any area of the breast.",
+                      "a) Blood in your urine, which may appear pink, red or cola colored. \n\nb) Pain in your back or side that doesn't go away. \n\nc) Loss of appetite. \n\nd) Unexplained weight loss \n\ne) Tiredness \n\nf) Fever",
                       style: TextStyle(
                           fontSize: 24,
                           fontWeight: FontWeight.w500,
@@ -75,7 +76,7 @@ class KidneySymptom extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => Bladder()),
+                      MaterialPageRoute(builder: (context) => Kidney()),
                     );
                   },
                   style: ElevatedButton.styleFrom(

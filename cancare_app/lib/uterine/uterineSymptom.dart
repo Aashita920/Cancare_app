@@ -14,16 +14,16 @@ class UterineSymptom extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(70.0),
+          preferredSize: Size.fromHeight(60.0),
           child: AppBar(
             backgroundColor: Colors.purple,
             title: Center(
               child: Text(
-                "Kidney Cancer - Symptoms",
+                "Symptoms",
                 style: TextStyle(
                     color: Colors.yellow,
-                    fontSize: 22.0,
-                    fontWeight: FontWeight.w600),
+                    fontSize: 30.0,
+                    fontFamily: 'Nexa-Bold'),
               ),
             ),
           ),
@@ -39,7 +39,7 @@ class UterineSymptom extends StatelessWidget {
                   width: MediaQuery.of(context).size.width * 0.90,
                   child: Center(
                     child: Text(
-                      "a) New lump in the breast or underarm (armpit). \n\nb) Thickening or swelling of part of the breast. \n\nc) Irritation or dimpling of breast skin. \n\nd) Redness or flaky skin in the nipple area or the breast. \n\ne) Pulling in of the nipple or pain in the nipple area. \n\nf) Nipple discharge other than breast milk, including blood. \n\ng) Any change in the size or the shape of the breast. \n\nh) Pain any area of the breast.",
+                      "a) Vaginal bleeding between periods before menopause. \n\nb) Vaginal bleeding or spotting postmenopause, even a slight amount. \n\nc) Lower abdominal pain or cramping in your pelvis, just below your belly.\n\nd) Thin white or clear vaginal discharge if you’re postmenopausal.\n\ne) Extremely prolonged, heavy or frequent vaginal bleeding if you’re older than 40.",
                       style: TextStyle(
                           fontSize: 24,
                           fontWeight: FontWeight.w500,

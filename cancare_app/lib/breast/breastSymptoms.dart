@@ -14,7 +14,7 @@ class breastSymptom extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(70.0),
+          preferredSize: Size.fromHeight(60.0),
           child: AppBar(
             backgroundColor: Colors.purple,
             title: Center(
@@ -22,8 +22,8 @@ class breastSymptom extends StatelessWidget {
                 "Symptoms",
                 style: TextStyle(
                     color: Colors.yellow,
-                    fontSize: 22.0,
-                    fontWeight: FontWeight.w600),
+                    fontSize: 30.0,
+                    fontFamily: 'Nexa-Bold'),
               ),
             ),
           ),

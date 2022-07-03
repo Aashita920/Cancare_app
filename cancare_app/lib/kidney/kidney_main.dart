@@ -17,7 +17,7 @@ class _KidneyMainState extends State<KidneyMain> {
 
   final _questions = const [
     {
-      'questionText': 'Do you feel new lump in the breast or underarm?',
+      'questionText': 'Do you feel feverish often?',
       'answers': [
         {'text': 'Yes', 'score': 10},
         {'text': 'No', 'score': 0},
@@ -26,7 +26,7 @@ class _KidneyMainState extends State<KidneyMain> {
     },
     {
       'questionText':
-          'Do you  notice any thickening or swelling of part of the breast?',
+          'Do you  notice blood in your urine, which may appear pink, red or cola colored.?',
       'answers': [
         {'text': 'Yes', 'score': 10},
         {'text': 'No', 'score': 0},
@@ -34,16 +34,8 @@ class _KidneyMainState extends State<KidneyMain> {
       ],
     },
     {
-      'questionText': 'Do you feel irritation or dimpling of breast skin?',
-      'answers': [
-        {'text': 'Yes', 'score': 10},
-        {'text': 'No', 'score': 0},
-        {'text': 'Can not say', 'score': 5},
-      ],
-    },
-    {
       'questionText':
-          'Do you notice redness or flaky skin in the nipple area or the breast?',
+          'Do you feel pain in your back or side that does not go away?',
       'answers': [
         {'text': 'Yes', 'score': 10},
         {'text': 'No', 'score': 0},
@@ -51,8 +43,7 @@ class _KidneyMainState extends State<KidneyMain> {
       ],
     },
     {
-      'questionText':
-          'Do you feel any pulling in of the nipple or pain in the nipple area?',
+      'questionText': 'Do you notice loss of appetite.?',
       'answers': [
         {'text': 'Yes', 'score': 10},
         {'text': 'No', 'score': 0},
@@ -60,8 +51,7 @@ class _KidneyMainState extends State<KidneyMain> {
       ],
     },
     {
-      'questionText':
-          'Do you notice nipple discharge other than breast milk, including blood?',
+      'questionText': 'Do you notice unexplained weight loss?',
       'answers': [
         {'text': 'Yes', 'score': 10},
         {'text': 'No', 'score': 0},
@@ -69,16 +59,7 @@ class _KidneyMainState extends State<KidneyMain> {
       ],
     },
     {
-      'questionText':
-          'Do you notice any change in the size or the shape of the breast.?',
-      'answers': [
-        {'text': 'Yes', 'score': 10},
-        {'text': 'No', 'score': 0},
-        {'text': 'Can not say', 'score': 5},
-      ],
-    },
-    {
-      'questionText': 'Do you feel pain any area of the breast?',
+      'questionText': 'Do you feel tiredness more often?',
       'answers': [
         {'text': 'Yes', 'score': 10},
         {'text': 'No', 'score': 0},
@@ -119,13 +100,16 @@ class _KidneyMainState extends State<KidneyMain> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(65.0),
+          preferredSize: Size.fromHeight(60.0),
           child: AppBar(
             backgroundColor: Colors.purple,
             title: Center(
               child: Text(
-                "Quiz for breast Cancer",
-                style: TextStyle(fontSize: 27.0),
+                "Quiz for kidney cancer",
+                style: TextStyle(
+                    color: Colors.yellow,
+                    fontSize: 30.0,
+                    fontFamily: 'Nexa-Bold'),
               ),
             ),
           ),

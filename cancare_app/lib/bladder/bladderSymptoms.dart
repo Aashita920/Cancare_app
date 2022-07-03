@@ -45,6 +45,7 @@ class BladderSymptom extends StatelessWidget {
                       style: TextStyle(
                           fontSize: 24,
                           fontWeight: FontWeight.w500,
+                          fontFamily: 'Nexa-Bold',
                           color: Color.fromARGB(255, 161, 80, 74)),
                     ),
                   ),
@@ -96,7 +97,10 @@ class BladderSymptom extends StatelessWidget {
                       ),
                       Text(
                         "Go Back",
-                        style: TextStyle(fontSize: 27.0, color: Colors.yellow),
+                        style: TextStyle(
+                            fontSize: 27.0,
+                            color: Colors.yellow,
+                            fontFamily: 'Nexa-Bold'),
                       ),
                     ],
                   ),
@@ -123,7 +127,10 @@ class BladderSymptom extends StatelessWidget {
                       ),
                       Text(
                         "Types",
-                        style: TextStyle(fontSize: 27.0, color: Colors.yellow),
+                        style: TextStyle(
+                            fontSize: 27.0,
+                            color: Colors.yellow,
+                            fontFamily: 'Nexa-Bold'),
                       ),
                     ],
                   ),

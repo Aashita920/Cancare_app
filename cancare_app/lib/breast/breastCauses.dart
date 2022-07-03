@@ -12,7 +12,7 @@ class BreastCauses extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(fontFamily: 'Nexa'),
+      theme: ThemeData(fontFamily: 'Nexa - Bold'),
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: PreferredSize(
@@ -53,13 +53,13 @@ class BreastCauses extends StatelessWidget {
                 Center(
                   child: SizedBox(
                     height: MediaQuery.of(context).size.height * 0.09,
-                    width: MediaQuery.of(context).size.width * 0.35,
+                    width: MediaQuery.of(context).size.width * 0.4,
                     child: ElevatedButton(
                       child: Text('More information',
                           style: TextStyle(
                               color: Colors.yellow,
                               fontWeight: FontWeight.w700,
-                              fontSize: 18)),
+                              fontSize: 20)),
                       style: ElevatedButton.styleFrom(
                           primary: Color.fromARGB(255, 155, 45, 174)),
                       onPressed: () async {

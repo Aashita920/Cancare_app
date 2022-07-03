@@ -2,6 +2,8 @@
 
 import 'package:cancare_app/thyroid/thyroid.dart';
 import 'package:cancare_app/thyroid/thyroid_main.dart';
+import 'package:cancare_app/uterine/uterine.dart';
+import 'package:cancare_app/uterine/uterine_main.dart';
 import 'package:flutter/material.dart';
 
 class UterineResult extends StatelessWidget {
@@ -14,11 +16,11 @@ class UterineResult extends StatelessWidget {
   String get resultPhrase {
     String resultText;
     if (resultScore >= 40) {
-      resultText = 'You are likely to have Bladder Cancer';
+      resultText = 'You are likely to have Uterine Cancer';
     } else if (resultScore >= 20 && resultScore <= 10) {
-      resultText = 'You have few chances of having Bladder Cancer';
+      resultText = 'You have few chances of having Uterine Cancer';
     } else {
-      resultText = 'You have very less chances of having Bladder Cancer';
+      resultText = 'You have very less chances of having Uterine Cancer';
     }
     return resultText;
   }
@@ -46,7 +48,7 @@ class UterineResult extends StatelessWidget {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => ThyroidMain()),
+                MaterialPageRoute(builder: (context) => UterineMain()),
               );
             },
             style: ElevatedButton.styleFrom(
@@ -76,7 +78,7 @@ class UterineResult extends StatelessWidget {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => Thyroid()),
+                MaterialPageRoute(builder: (context) => Uterine()),
               );
             },
             style: ElevatedButton.styleFrom(

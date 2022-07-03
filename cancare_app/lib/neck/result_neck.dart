@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, use_key_in_widget_constructors, prefer_const_constructors_in_immutables
 
-import 'package:cancare_app/kidney/kidney.dart';
-import 'package:cancare_app/kidney/kidney_main.dart';
+import 'package:cancare_app/neck/neck.dart';
+import 'package:cancare_app/neck/neck_main.dart';
 import 'package:flutter/material.dart';
 
 class NeckResult extends StatelessWidget {
@@ -14,11 +14,11 @@ class NeckResult extends StatelessWidget {
   String get resultPhrase {
     String resultText;
     if (resultScore >= 40) {
-      resultText = 'You are likely to have Bladder Cancer';
+      resultText = 'You are likely to have neck Cancer';
     } else if (resultScore >= 20 && resultScore <= 10) {
-      resultText = 'You have few chances of having Bladder Cancer';
+      resultText = 'You have few chances of having neck Cancer';
     } else {
-      resultText = 'You have very less chances of having Bladder Cancer';
+      resultText = 'You have very less chances of having neck Cancer';
     }
     return resultText;
   }
@@ -46,7 +46,7 @@ class NeckResult extends StatelessWidget {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => KidneyMain()),
+                MaterialPageRoute(builder: (context) => NeckMain()),
               );
             },
             style: ElevatedButton.styleFrom(
@@ -76,7 +76,7 @@ class NeckResult extends StatelessWidget {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => Kidney()),
+                MaterialPageRoute(builder: (context) => Neck()),
               );
             },
             style: ElevatedButton.styleFrom(

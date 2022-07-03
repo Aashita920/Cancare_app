@@ -25,7 +25,7 @@ class _MedantabladderState extends State<Medantabladder> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(fontFamily: 'Nexa'),
+      theme: ThemeData(fontFamily: 'Nexa-Bold'),
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: PreferredSize(

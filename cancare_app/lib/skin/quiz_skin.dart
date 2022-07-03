@@ -2,6 +2,8 @@
 
 import 'package:cancare_app/breast/answer_breast.dart';
 import 'package:cancare_app/breast/questions_breast.dart';
+import 'package:cancare_app/skin/answer_skin.dart';
+import 'package:cancare_app/skin/questions_skin.dart';
 import 'package:flutter/material.dart';
 
 class SkinQuiz extends StatelessWidget {
@@ -17,10 +19,10 @@ class SkinQuiz extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        BreastQuestion(questions[questionIndex]['questionText'] as String),
+        SkinQuestion(questions[questionIndex]['questionText'] as String),
         ...(questions[questionIndex]['answers'] as List<Map<String, Object>>)
             .map((answer) {
-          return BreastAnswer(() => answerQuestion(answer['score'] as int),
+          return SkinAnswer(() => answerQuestion(answer['score'] as int),
               answer['text'] as String);
         }).toList(),
       ],

@@ -1,6 +1,7 @@
 // ignore_for_file: file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:cancare_app/bladder/bladder.dart';
+import 'package:cancare_app/breast/breast.dart';
 import 'package:cancare_app/breast/fortisBreast.dart';
 import 'package:cancare_app/breast/maxBreast.dart';
 import 'package:cancare_app/breast/narayanBreast.dart';
@@ -137,7 +138,7 @@ class BreastHospital extends StatelessWidget {
                       child: ElevatedButton(
                         onPressed: () {
                           Navigator.of(context).push(
-                            MaterialPageRoute(builder: (context) => Bladder()),
+                            MaterialPageRoute(builder: (context) => Breast()),
                           );
                         },
                         style: ElevatedButton.styleFrom(
@@ -156,7 +157,9 @@ class BreastHospital extends StatelessWidget {
                             Text(
                               "Go Back",
                               style: TextStyle(
-                                  fontSize: 27.0, color: Colors.yellow),
+                                  fontSize: 27.0,
+                                  color: Colors.yellow,
+                                  fontFamily: "Nexa-Bold"),
                             ),
                           ],
                         ),

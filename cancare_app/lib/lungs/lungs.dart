@@ -1,6 +1,9 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:cancare_app/lungs/LungsKnow.dart';
+import 'package:cancare_app/lungs/lungsCauses.dart';
+import 'package:cancare_app/lungs/lungsHospital.dart';
+import 'package:cancare_app/lungs/lungsStories.dart';
 import 'package:cancare_app/lungs/lungsSymptom.dart';
 import 'package:flutter/material.dart';
 import '../homepages/main.dart';
@@ -20,13 +23,16 @@ class _LungsState extends State<Lungs> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
           appBar: PreferredSize(
-            preferredSize: Size.fromHeight(70.0),
+            preferredSize: Size.fromHeight(60.0),
             child: AppBar(
               backgroundColor: Colors.purple,
               title: Center(
                 child: Text(
                   "Lungs Cancer",
-                  style: TextStyle(color: Colors.yellow, fontSize: 35.0),
+                  style: TextStyle(
+                      color: Colors.yellow,
+                      fontSize: 30.0,
+                      fontFamily: 'Nexa-Bold'),
                 ),
               ),
             ),
@@ -45,7 +51,7 @@ class _LungsState extends State<Lungs> {
                       );
                     },
                     style: ElevatedButton.styleFrom(
-                        primary: Color.fromARGB(255, 155, 45, 174)),
+                        primary: Color.fromARGB(128, 116, 31, 40)),
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
@@ -61,9 +67,7 @@ class _LungsState extends State<Lungs> {
                             Text(
                               "Know About",
                               style: TextStyle(
-                                  color: Colors.yellow,
-                                  fontSize: 20.0,
-                                  fontWeight: FontWeight.w700),
+                                  fontSize: 20.0, fontWeight: FontWeight.w700),
                             ),
                           ],
                         ),
@@ -82,7 +86,7 @@ class _LungsState extends State<Lungs> {
                       );
                     },
                     style: ElevatedButton.styleFrom(
-                        primary: Color.fromARGB(255, 155, 45, 174)),
+                        primary: Color.fromARGB(128, 116, 31, 40)),
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
@@ -98,9 +102,7 @@ class _LungsState extends State<Lungs> {
                             Text(
                               "Symptoms",
                               style: TextStyle(
-                                  color: Colors.yellow,
-                                  fontSize: 20.0,
-                                  fontWeight: FontWeight.w700),
+                                  fontSize: 20.0, fontWeight: FontWeight.w700),
                             ),
                           ],
                         ),
@@ -120,11 +122,11 @@ class _LungsState extends State<Lungs> {
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => LungsKnow()),
+                        MaterialPageRoute(builder: (context) => LungsCauses()),
                       );
                     },
                     style: ElevatedButton.styleFrom(
-                        primary: Color.fromARGB(255, 155, 45, 174)),
+                        primary: Color.fromARGB(128, 116, 31, 40)),
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
@@ -140,9 +142,7 @@ class _LungsState extends State<Lungs> {
                             Text(
                               "Causes",
                               style: TextStyle(
-                                  color: Colors.yellow,
-                                  fontSize: 20.0,
-                                  fontWeight: FontWeight.w700),
+                                  fontSize: 20.0, fontWeight: FontWeight.w700),
                             ),
                           ],
                         ),
@@ -157,11 +157,12 @@ class _LungsState extends State<Lungs> {
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => LungsKnow()),
+                        MaterialPageRoute(
+                            builder: (context) => LungsHospital()),
                       );
                     },
                     style: ElevatedButton.styleFrom(
-                        primary: Color.fromARGB(255, 155, 45, 174)),
+                        primary: Color.fromARGB(128, 116, 31, 40)),
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
@@ -177,9 +178,7 @@ class _LungsState extends State<Lungs> {
                             Text(
                               "Hospitals",
                               style: TextStyle(
-                                  color: Colors.yellow,
-                                  fontSize: 20.0,
-                                  fontWeight: FontWeight.w700),
+                                  fontSize: 20.0, fontWeight: FontWeight.w700),
                             ),
                           ],
                         ),
@@ -204,11 +203,11 @@ class _LungsState extends State<Lungs> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => LungsKnow()),
+                                builder: (context) => LungsStory()),
                           );
                         },
                         style: ElevatedButton.styleFrom(
-                            primary: Color.fromARGB(255, 155, 45, 174)),
+                            primary: Color.fromARGB(128, 116, 31, 40)),
                         child: Row(
                           mainAxisSize: MainAxisSize.min,
                           children: [
@@ -225,7 +224,6 @@ class _LungsState extends State<Lungs> {
                                 Text(
                                   "Stories",
                                   style: TextStyle(
-                                      color: Colors.yellow,
                                       fontSize: 20.0,
                                       fontWeight: FontWeight.w700),
                                 ),
@@ -251,22 +249,20 @@ class _LungsState extends State<Lungs> {
                             );
                           },
                           style: ElevatedButton.styleFrom(
-                              primary: Color.fromARGB(255, 155, 45, 174)),
+                              primary: Color.fromARGB(128, 116, 31, 40)),
                           child: Row(
                             mainAxisSize: MainAxisSize.min,
                             children: [
                               Icon(
                                 Icons.navigate_before,
                                 size: 30.0,
-                                color: Colors.yellow,
                               ),
                               SizedBox(
                                 width: 7,
                               ),
                               Text(
                                 "Types",
-                                style: TextStyle(
-                                    fontSize: 27.0, color: Colors.yellow),
+                                style: TextStyle(fontSize: 27.0),
                               ),
                             ],
                           ),
@@ -282,14 +278,13 @@ class _LungsState extends State<Lungs> {
                             );
                           },
                           style: ElevatedButton.styleFrom(
-                              primary: Color.fromARGB(255, 155, 45, 174)),
+                              primary: Color.fromARGB(128, 116, 31, 40)),
                           child: Row(
                             mainAxisSize: MainAxisSize.min,
                             children: [
                               Icon(
                                 Icons.navigate_before,
                                 size: 30.0,
-                                color: Colors.yellow,
                               ),
                               SizedBox(
                                 width: 7,
@@ -297,7 +292,8 @@ class _LungsState extends State<Lungs> {
                               Text(
                                 "Home",
                                 style: TextStyle(
-                                    fontSize: 27.0, color: Colors.yellow),
+                                  fontSize: 27.0,
+                                ),
                               ),
                             ],
                           ),

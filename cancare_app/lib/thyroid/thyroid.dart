@@ -1,6 +1,9 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'package:cancare_app/thyroid/thyroidCauses.dart';
+import 'package:cancare_app/thyroid/thyroidHospital.dart';
 import 'package:cancare_app/thyroid/thyroidKnow.dart';
+import 'package:cancare_app/thyroid/thyroidStories.dart';
 import 'package:cancare_app/thyroid/thyroidSymptom.dart';
 import 'package:flutter/material.dart';
 import '../homepages/main.dart';
@@ -20,13 +23,16 @@ class _ThyroidState extends State<Thyroid> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(70.0),
+          preferredSize: Size.fromHeight(60.0),
           child: AppBar(
             backgroundColor: Colors.purple,
             title: Center(
               child: Text(
                 "Thyroid Cancer",
-                style: TextStyle(color: Colors.yellow, fontSize: 35.0),
+                style: TextStyle(
+                    color: Colors.yellow,
+                    fontSize: 30.0,
+                    fontFamily: 'Nexa-Bold'),
               ),
             ),
           ),
@@ -45,7 +51,7 @@ class _ThyroidState extends State<Thyroid> {
                     );
                   },
                   style: ElevatedButton.styleFrom(
-                      primary: Color.fromARGB(255, 155, 45, 174)),
+                      primary: Color.fromARGB(128, 116, 31, 40)),
                   child: Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
@@ -61,9 +67,7 @@ class _ThyroidState extends State<Thyroid> {
                           Text(
                             "Know About",
                             style: TextStyle(
-                                color: Colors.yellow,
-                                fontSize: 20.0,
-                                fontWeight: FontWeight.w700),
+                                fontSize: 20.0, fontWeight: FontWeight.w700),
                           ),
                         ],
                       ),
@@ -82,7 +86,7 @@ class _ThyroidState extends State<Thyroid> {
                     );
                   },
                   style: ElevatedButton.styleFrom(
-                      primary: Color.fromARGB(255, 155, 45, 174)),
+                      primary: Color.fromARGB(128, 116, 31, 40)),
                   child: Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
@@ -98,9 +102,7 @@ class _ThyroidState extends State<Thyroid> {
                           Text(
                             "Symptoms",
                             style: TextStyle(
-                                color: Colors.yellow,
-                                fontSize: 20.0,
-                                fontWeight: FontWeight.w700),
+                                fontSize: 20.0, fontWeight: FontWeight.w700),
                           ),
                         ],
                       ),
@@ -120,11 +122,11 @@ class _ThyroidState extends State<Thyroid> {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => ThyroidKnow()),
+                      MaterialPageRoute(builder: (context) => ThyroidCauses()),
                     );
                   },
                   style: ElevatedButton.styleFrom(
-                      primary: Color.fromARGB(255, 155, 45, 174)),
+                      primary: Color.fromARGB(128, 116, 31, 40)),
                   child: Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
@@ -140,9 +142,7 @@ class _ThyroidState extends State<Thyroid> {
                           Text(
                             "Causes",
                             style: TextStyle(
-                                color: Colors.yellow,
-                                fontSize: 20.0,
-                                fontWeight: FontWeight.w700),
+                                fontSize: 20.0, fontWeight: FontWeight.w700),
                           ),
                         ],
                       ),
@@ -157,11 +157,12 @@ class _ThyroidState extends State<Thyroid> {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => ThyroidKnow()),
+                      MaterialPageRoute(
+                          builder: (context) => ThyroidHospital()),
                     );
                   },
                   style: ElevatedButton.styleFrom(
-                      primary: Color.fromARGB(255, 155, 45, 174)),
+                      primary: Color.fromARGB(128, 116, 31, 40)),
                   child: Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
@@ -177,9 +178,7 @@ class _ThyroidState extends State<Thyroid> {
                           Text(
                             "Hospitals",
                             style: TextStyle(
-                                color: Colors.yellow,
-                                fontSize: 20.0,
-                                fontWeight: FontWeight.w700),
+                                fontSize: 20.0, fontWeight: FontWeight.w700),
                           ),
                         ],
                       ),
@@ -204,11 +203,11 @@ class _ThyroidState extends State<Thyroid> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => ThyroidKnow()),
+                              builder: (context) => ThyroidStory()),
                         );
                       },
                       style: ElevatedButton.styleFrom(
-                          primary: Color.fromARGB(255, 155, 45, 174)),
+                          primary: Color.fromARGB(128, 116, 31, 40)),
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
@@ -224,7 +223,6 @@ class _ThyroidState extends State<Thyroid> {
                               Text(
                                 "Stories",
                                 style: TextStyle(
-                                    color: Colors.yellow,
                                     fontSize: 20.0,
                                     fontWeight: FontWeight.w700),
                               ),
@@ -250,14 +248,13 @@ class _ThyroidState extends State<Thyroid> {
                           );
                         },
                         style: ElevatedButton.styleFrom(
-                            primary: Color.fromARGB(255, 155, 45, 174)),
+                            primary: Color.fromARGB(128, 116, 31, 40)),
                         child: Row(
                           mainAxisSize: MainAxisSize.min,
                           children: [
                             Icon(
                               Icons.navigate_before,
                               size: 30.0,
-                              color: Colors.yellow,
                             ),
                             SizedBox(
                               width: 7,
@@ -265,7 +262,8 @@ class _ThyroidState extends State<Thyroid> {
                             Text(
                               "Types",
                               style: TextStyle(
-                                  fontSize: 27.0, color: Colors.yellow),
+                                fontSize: 27.0,
+                              ),
                             ),
                           ],
                         ),
@@ -281,22 +279,20 @@ class _ThyroidState extends State<Thyroid> {
                           );
                         },
                         style: ElevatedButton.styleFrom(
-                            primary: Color.fromARGB(255, 155, 45, 174)),
+                            primary: Color.fromARGB(128, 116, 31, 40)),
                         child: Row(
                           mainAxisSize: MainAxisSize.min,
                           children: [
                             Icon(
                               Icons.navigate_before,
                               size: 30.0,
-                              color: Colors.yellow,
                             ),
                             SizedBox(
                               width: 7,
                             ),
                             Text(
                               "Home",
-                              style: TextStyle(
-                                  fontSize: 27.0, color: Colors.yellow),
+                              style: TextStyle(fontSize: 27.0),
                             ),
                           ],
                         ),

@@ -17,7 +17,8 @@ class _LungsMainState extends State<LungsMain> {
 
   final _questions = const [
     {
-      'questionText': 'Do you feel new lump in the breast or underarm?',
+      'questionText':
+          'Do you have a cough that does not go away or gets worse?',
       'answers': [
         {'text': 'Yes', 'score': 10},
         {'text': 'No', 'score': 0},
@@ -26,7 +27,7 @@ class _LungsMainState extends State<LungsMain> {
     },
     {
       'questionText':
-          'Do you  notice any thickening or swelling of part of the breast?',
+          'Do you cough blood or rust-colored sputum (spit or phlegm)?',
       'answers': [
         {'text': 'Yes', 'score': 10},
         {'text': 'No', 'score': 0},
@@ -34,7 +35,48 @@ class _LungsMainState extends State<LungsMain> {
       ],
     },
     {
-      'questionText': 'Do you feel irritation or dimpling of breast skin?',
+      'questionText':
+          'Do you feel chest pain that is often worse with deep breathing, coughing, or laughing?',
+      'answers': [
+        {'text': 'Yes', 'score': 10},
+        {'text': 'No', 'score': 0},
+        {'text': 'Can not say', 'score': 5},
+      ],
+    },
+    {
+      'questionText': 'Do you feel hoarseness?',
+      'answers': [
+        {'text': 'Yes', 'score': 10},
+        {'text': 'No', 'score': 0},
+        {'text': 'Can not say', 'score': 5},
+      ],
+    },
+    {
+      'questionText': 'Do you notice Loss of appetite?',
+      'answers': [
+        {'text': 'Yes', 'score': 10},
+        {'text': 'No', 'score': 0},
+        {'text': 'Can not say', 'score': 5},
+      ],
+    },
+    {
+      'questionText': 'Do you notice unexplained weight loss?',
+      'answers': [
+        {'text': 'Yes', 'score': 10},
+        {'text': 'No', 'score': 0},
+        {'text': 'Can not say', 'score': 5},
+      ],
+    },
+    {
+      'questionText': 'Do you notice shortness of breath?',
+      'answers': [
+        {'text': 'Yes', 'score': 10},
+        {'text': 'No', 'score': 0},
+        {'text': 'Can not say', 'score': 5},
+      ],
+    },
+    {
+      'questionText': 'Do you feel tired or weak?',
       'answers': [
         {'text': 'Yes', 'score': 10},
         {'text': 'No', 'score': 0},
@@ -43,7 +85,7 @@ class _LungsMainState extends State<LungsMain> {
     },
     {
       'questionText':
-          'Do you notice redness or flaky skin in the nipple area or the breast?',
+          'Do you have infections such as bronchitis and pneumonia that don’t go away or keep coming back?',
       'answers': [
         {'text': 'Yes', 'score': 10},
         {'text': 'No', 'score': 0},
@@ -51,34 +93,7 @@ class _LungsMainState extends State<LungsMain> {
       ],
     },
     {
-      'questionText':
-          'Do you feel any pulling in of the nipple or pain in the nipple area?',
-      'answers': [
-        {'text': 'Yes', 'score': 10},
-        {'text': 'No', 'score': 0},
-        {'text': 'Can not say', 'score': 5},
-      ],
-    },
-    {
-      'questionText':
-          'Do you notice nipple discharge other than breast milk, including blood?',
-      'answers': [
-        {'text': 'Yes', 'score': 10},
-        {'text': 'No', 'score': 0},
-        {'text': 'Can not say', 'score': 5},
-      ],
-    },
-    {
-      'questionText':
-          'Do you notice any change in the size or the shape of the breast.?',
-      'answers': [
-        {'text': 'Yes', 'score': 10},
-        {'text': 'No', 'score': 0},
-        {'text': 'Can not say', 'score': 5},
-      ],
-    },
-    {
-      'questionText': 'Do you feel pain any area of the breast?',
+      'questionText': 'Do you feel new onset of wheezing?',
       'answers': [
         {'text': 'Yes', 'score': 10},
         {'text': 'No', 'score': 0},
@@ -119,13 +134,16 @@ class _LungsMainState extends State<LungsMain> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(65.0),
+          preferredSize: Size.fromHeight(60.0),
           child: AppBar(
             backgroundColor: Colors.purple,
             title: Center(
               child: Text(
-                "Quiz for breast Cancer",
-                style: TextStyle(fontSize: 27.0),
+                "Quiz for Lungs Cancer",
+                style: TextStyle(
+                    color: Colors.yellow,
+                    fontSize: 30.0,
+                    fontFamily: 'Nexa-Bold'),
               ),
             ),
           ),

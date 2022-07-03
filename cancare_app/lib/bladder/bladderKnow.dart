@@ -59,9 +59,10 @@ class BladderKnow extends StatelessWidget {
                     child: Text(
                       "Cancer is a disease in which cells in the body grow out of control. When cancer starts in the bladder, it is called bladder cancer. The bladder is a balloon- shaped organ in your lower abdomen, near the pelvis. It stores urine from the kidneys until it is passed out of the body.",
                       style: TextStyle(
-                          fontSize: 24,
-                          fontWeight: FontWeight.w500,
-                          color: Color.fromARGB(255, 161, 80, 74)),
+                        fontFamily: 'Nexa-Bold',
+                        fontSize: 25,
+                        color: Color.fromARGB(255, 166, 73, 42),
+                      ),
                     ),
                   ),
                 ),
@@ -70,14 +71,14 @@ class BladderKnow extends StatelessWidget {
                 ),
                 Center(
                   child: SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.09,
-                    width: MediaQuery.of(context).size.width * 0.35,
+                    height: MediaQuery.of(context).size.height * 0.08,
+                    width: MediaQuery.of(context).size.width * 0.4,
                     child: ElevatedButton(
                       child: Text('More information',
                           style: TextStyle(
                               color: Colors.yellow,
                               fontWeight: FontWeight.w700,
-                              fontSize: 18)),
+                              fontSize: 19)),
                       style: ElevatedButton.styleFrom(
                           primary: Color.fromARGB(255, 155, 45, 174)),
                       onPressed: () async {
@@ -111,7 +112,11 @@ class BladderKnow extends StatelessWidget {
                       ),
                       Text(
                         "Go Back",
-                        style: TextStyle(fontSize: 27.0, color: Colors.yellow),
+                        style: TextStyle(
+                          fontFamily: 'Nexa-Bold',
+                          fontSize: 27,
+                          color: Colors.yellow,
+                        ),
                       ),
                     ],
                   ),
@@ -137,7 +142,10 @@ class BladderKnow extends StatelessWidget {
                       ),
                       Text(
                         "Types",
-                        style: TextStyle(fontSize: 27.0, color: Colors.yellow),
+                        style: TextStyle(
+                            fontFamily: 'Nexa-Bold',
+                            fontSize: 25,
+                            color: Colors.yellow),
                       ),
                     ],
                   ),

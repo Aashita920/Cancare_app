@@ -1,6 +1,9 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'package:cancare_app/kidney/kidneyCauses.dart';
+import 'package:cancare_app/kidney/kidneyHospital.dart';
 import 'package:cancare_app/kidney/kidneyKnow.dart';
+import 'package:cancare_app/kidney/kidneyStories.dart';
 import 'package:cancare_app/kidney/kidneySymptoms.dart';
 import 'package:flutter/material.dart';
 
@@ -21,13 +24,16 @@ class _KidneyState extends State<Kidney> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
           appBar: PreferredSize(
-            preferredSize: Size.fromHeight(70.0),
+            preferredSize: Size.fromHeight(60.0),
             child: AppBar(
               backgroundColor: Colors.purple,
               title: Center(
                 child: Text(
                   "Kidney Cancer",
-                  style: TextStyle(color: Colors.yellow, fontSize: 35.0),
+                  style: TextStyle(
+                      color: Colors.yellow,
+                      fontSize: 30.0,
+                      fontFamily: 'Nexa-Bold'),
                 ),
               ),
             ),
@@ -46,7 +52,7 @@ class _KidneyState extends State<Kidney> {
                       );
                     },
                     style: ElevatedButton.styleFrom(
-                        primary: Color.fromARGB(255, 155, 45, 174)),
+                        primary: Color.fromARGB(128, 116, 31, 40)),
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
@@ -62,9 +68,7 @@ class _KidneyState extends State<Kidney> {
                             Text(
                               "Know About",
                               style: TextStyle(
-                                  color: Colors.yellow,
-                                  fontSize: 20.0,
-                                  fontWeight: FontWeight.w700),
+                                  fontSize: 20.0, fontWeight: FontWeight.w700),
                             ),
                           ],
                         ),
@@ -84,7 +88,7 @@ class _KidneyState extends State<Kidney> {
                       );
                     },
                     style: ElevatedButton.styleFrom(
-                        primary: Color.fromARGB(255, 155, 45, 174)),
+                        primary: Color.fromARGB(128, 116, 31, 40)),
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
@@ -100,9 +104,7 @@ class _KidneyState extends State<Kidney> {
                             Text(
                               "Symptoms",
                               style: TextStyle(
-                                  color: Colors.yellow,
-                                  fontSize: 20.0,
-                                  fontWeight: FontWeight.w700),
+                                  fontSize: 20.0, fontWeight: FontWeight.w700),
                             ),
                           ],
                         ),
@@ -122,11 +124,11 @@ class _KidneyState extends State<Kidney> {
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => KidneyKnow()),
+                        MaterialPageRoute(builder: (context) => KidneyCauses()),
                       );
                     },
                     style: ElevatedButton.styleFrom(
-                        primary: Color.fromARGB(255, 155, 45, 174)),
+                        primary: Color.fromARGB(128, 116, 31, 40)),
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
@@ -142,9 +144,7 @@ class _KidneyState extends State<Kidney> {
                             Text(
                               "Causes",
                               style: TextStyle(
-                                  color: Colors.yellow,
-                                  fontSize: 20.0,
-                                  fontWeight: FontWeight.w700),
+                                  fontSize: 20.0, fontWeight: FontWeight.w700),
                             ),
                           ],
                         ),
@@ -159,14 +159,16 @@ class _KidneyState extends State<Kidney> {
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => KidneyKnow()),
+                        MaterialPageRoute(
+                            builder: (context) => KidneyHospital()),
                       );
                     },
                     style: ElevatedButton.styleFrom(
-                        primary: Color.fromARGB(255, 155, 45, 174)),
+                        primary: Color.fromARGB(128, 116, 31, 40)),
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
+                        SizedBox(width: 10),
                         Column(
                           children: [
                             Image(
@@ -179,9 +181,7 @@ class _KidneyState extends State<Kidney> {
                             Text(
                               "Hospitals",
                               style: TextStyle(
-                                  color: Colors.yellow,
-                                  fontSize: 20.0,
-                                  fontWeight: FontWeight.w700),
+                                  fontSize: 20.0, fontWeight: FontWeight.w700),
                             ),
                           ],
                         ),
@@ -206,11 +206,11 @@ class _KidneyState extends State<Kidney> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => KidneyKnow()),
+                                builder: (context) => KidneyStory()),
                           );
                         },
                         style: ElevatedButton.styleFrom(
-                            primary: Color.fromARGB(255, 155, 45, 174)),
+                            primary: Color.fromARGB(128, 116, 31, 40)),
                         child: Row(
                           mainAxisSize: MainAxisSize.min,
                           children: [
@@ -227,7 +227,6 @@ class _KidneyState extends State<Kidney> {
                                 Text(
                                   "Stories",
                                   style: TextStyle(
-                                      color: Colors.yellow,
                                       fontSize: 20.0,
                                       fontWeight: FontWeight.w700),
                                 ),
@@ -253,14 +252,13 @@ class _KidneyState extends State<Kidney> {
                             );
                           },
                           style: ElevatedButton.styleFrom(
-                              primary: Color.fromARGB(255, 155, 45, 174)),
+                              primary: Color.fromARGB(128, 116, 31, 40)),
                           child: Row(
                             mainAxisSize: MainAxisSize.min,
                             children: [
                               Icon(
                                 Icons.navigate_before,
                                 size: 30.0,
-                                color: Colors.yellow,
                               ),
                               SizedBox(
                                 width: 7,
@@ -268,7 +266,8 @@ class _KidneyState extends State<Kidney> {
                               Text(
                                 "Types",
                                 style: TextStyle(
-                                    fontSize: 27.0, color: Colors.yellow),
+                                  fontSize: 27.0,
+                                ),
                               ),
                             ],
                           ),
@@ -284,14 +283,13 @@ class _KidneyState extends State<Kidney> {
                             );
                           },
                           style: ElevatedButton.styleFrom(
-                              primary: Color.fromARGB(255, 155, 45, 174)),
+                              primary: Color.fromARGB(128, 116, 31, 40)),
                           child: Row(
                             mainAxisSize: MainAxisSize.min,
                             children: [
                               Icon(
                                 Icons.navigate_before,
                                 size: 30.0,
-                                color: Colors.yellow,
                               ),
                               SizedBox(
                                 width: 7,
@@ -299,7 +297,8 @@ class _KidneyState extends State<Kidney> {
                               Text(
                                 "Home",
                                 style: TextStyle(
-                                    fontSize: 27.0, color: Colors.yellow),
+                                  fontSize: 27.0,
+                                ),
                               ),
                             ],
                           ),

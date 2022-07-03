@@ -2,6 +2,8 @@
 
 import 'package:cancare_app/thyroid/quiz_thyroid.dart';
 import 'package:cancare_app/thyroid/result_thyroid.dart';
+import 'package:cancare_app/uterine/quiz_uterine.dart';
+import 'package:cancare_app/uterine/result_uterine.dart';
 import 'package:flutter/material.dart';
 
 class UterineMain extends StatefulWidget {
@@ -17,7 +19,8 @@ class _UterineMainState extends State<UterineMain> {
 
   final _questions = const [
     {
-      'questionText': 'Do you feel new lump in the breast or underarm?',
+      'questionText':
+          'Do you notice vaginal bleeding between periods before menopause?',
       'answers': [
         {'text': 'Yes', 'score': 10},
         {'text': 'No', 'score': 0},
@@ -26,7 +29,7 @@ class _UterineMainState extends State<UterineMain> {
     },
     {
       'questionText':
-          'Do you  notice any thickening or swelling of part of the breast?',
+          'Do you  notice vaginal bleeding or spotting postmenopause, even a slight amount?',
       'answers': [
         {'text': 'Yes', 'score': 10},
         {'text': 'No', 'score': 0},
@@ -34,7 +37,8 @@ class _UterineMainState extends State<UterineMain> {
       ],
     },
     {
-      'questionText': 'Do you feel irritation or dimpling of breast skin?',
+      'questionText':
+          'Do you feel lower abdominal pain or cramping in your pelvis, just below your belly?',
       'answers': [
         {'text': 'Yes', 'score': 10},
         {'text': 'No', 'score': 0},
@@ -43,7 +47,7 @@ class _UterineMainState extends State<UterineMain> {
     },
     {
       'questionText':
-          'Do you notice redness or flaky skin in the nipple area or the breast?',
+          'Do you notice thin white or clear vaginal discharge if you’re postmenopausal?',
       'answers': [
         {'text': 'Yes', 'score': 10},
         {'text': 'No', 'score': 0},
@@ -52,33 +56,7 @@ class _UterineMainState extends State<UterineMain> {
     },
     {
       'questionText':
-          'Do you feel any pulling in of the nipple or pain in the nipple area?',
-      'answers': [
-        {'text': 'Yes', 'score': 10},
-        {'text': 'No', 'score': 0},
-        {'text': 'Can not say', 'score': 5},
-      ],
-    },
-    {
-      'questionText':
-          'Do you notice nipple discharge other than breast milk, including blood?',
-      'answers': [
-        {'text': 'Yes', 'score': 10},
-        {'text': 'No', 'score': 0},
-        {'text': 'Can not say', 'score': 5},
-      ],
-    },
-    {
-      'questionText':
-          'Do you notice any change in the size or the shape of the breast.?',
-      'answers': [
-        {'text': 'Yes', 'score': 10},
-        {'text': 'No', 'score': 0},
-        {'text': 'Can not say', 'score': 5},
-      ],
-    },
-    {
-      'questionText': 'Do you feel pain any area of the breast?',
+          'Do you feel extremely prolonged, heavy or frequent vaginal bleeding if you’re older than 40.?',
       'answers': [
         {'text': 'Yes', 'score': 10},
         {'text': 'No', 'score': 0},
@@ -119,13 +97,16 @@ class _UterineMainState extends State<UterineMain> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(65.0),
+          preferredSize: Size.fromHeight(60.0),
           child: AppBar(
             backgroundColor: Colors.purple,
             title: Center(
               child: Text(
-                "Quiz for breast Cancer",
-                style: TextStyle(fontSize: 27.0),
+                "Quiz for Uterine Cancer",
+                style: TextStyle(
+                    color: Colors.yellow,
+                    fontSize: 30.0,
+                    fontFamily: 'Nexa-Bold'),
               ),
             ),
           ),
@@ -139,12 +120,12 @@ class _UterineMainState extends State<UterineMain> {
               child: SizedBox(
                 width: MediaQuery.of(context).size.width * 0.8,
                 child: _questionIndex < _questions.length
-                    ? ThyroidQuiz(
+                    ? UterineQuiz(
                         answerQuestion: _answerQuestion,
                         questionIndex: _questionIndex,
                         questions: _questions,
                       )
-                    : ThyroidResult(_totalScore, _resetQuiz),
+                    : UterineResult(_totalScore, _resetQuiz),
               ),
             ),
           ],

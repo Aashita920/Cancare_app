@@ -70,7 +70,7 @@ class _breastMainState extends State<breastMain> {
     },
     {
       'questionText':
-          'Do you notice any change in the size or the shape of the breast.?',
+          'Do you notice any change in the size or the shape of the breast?',
       'answers': [
         {'text': 'Yes', 'score': 10},
         {'text': 'No', 'score': 0},
@@ -119,13 +119,16 @@ class _breastMainState extends State<breastMain> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(65.0),
+          preferredSize: Size.fromHeight(60.0),
           child: AppBar(
             backgroundColor: Colors.purple,
             title: Center(
               child: Text(
-                "Quiz for breast Cancer",
-                style: TextStyle(fontSize: 27.0),
+                "Quiz for breast cancer",
+                style: TextStyle(
+                    color: Colors.yellow,
+                    fontSize: 30.0,
+                    fontFamily: 'Nexa-Bold'),
               ),
             ),
           ),

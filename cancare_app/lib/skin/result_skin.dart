@@ -2,6 +2,8 @@
 
 import 'package:cancare_app/kidney/kidney.dart';
 import 'package:cancare_app/kidney/kidney_main.dart';
+import 'package:cancare_app/skin/skin.dart';
+import 'package:cancare_app/skin/skin_main.dart';
 import 'package:flutter/material.dart';
 
 class SkinResult extends StatelessWidget {
@@ -14,11 +16,14 @@ class SkinResult extends StatelessWidget {
   String get resultPhrase {
     String resultText;
     if (resultScore >= 40) {
-      resultText = 'You are likely to have Bladder Cancer';
+      resultText =
+          'You are likely to have Skin Cancer \n\n YOU MUST SEE A DOCTOR';
     } else if (resultScore >= 20 && resultScore <= 10) {
-      resultText = 'You have few chances of having Bladder Cancer';
+      resultText =
+          'You have few chances of having Skin Cancer \n\n YOU ARE RECOMMENDED TO SEE A DOCTOR';
     } else {
-      resultText = 'You have very less chances of having Bladder Cancer';
+      resultText =
+          'You have very less chances of having Skin Cancer\n\n But You should give a visit to a doctor for precautions';
     }
     return resultText;
   }
@@ -46,7 +51,7 @@ class SkinResult extends StatelessWidget {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => KidneyMain()),
+                MaterialPageRoute(builder: (context) => SkinMain()),
               );
             },
             style: ElevatedButton.styleFrom(
@@ -76,7 +81,7 @@ class SkinResult extends StatelessWidget {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => Kidney()),
+                MaterialPageRoute(builder: (context) => Skin()),
               );
             },
             style: ElevatedButton.styleFrom(

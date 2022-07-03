@@ -24,7 +24,7 @@ class _MaxbreastState extends State<Maxbreast> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(fontFamily: 'Nexa'),
+      theme: ThemeData(fontFamily: 'Nexa -Bold'),
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: PreferredSize(

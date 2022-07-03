@@ -17,7 +17,7 @@ class _LiverMainState extends State<LiverMain> {
 
   final _questions = const [
     {
-      'questionText': 'Do you feel new lump in the breast or underarm?',
+      'questionText': 'Do you feel that you are losing weight without trying?',
       'answers': [
         {'text': 'Yes', 'score': 10},
         {'text': 'No', 'score': 0},
@@ -25,8 +25,7 @@ class _LiverMainState extends State<LiverMain> {
       ],
     },
     {
-      'questionText':
-          'Do you  notice any thickening or swelling of part of the breast?',
+      'questionText': 'Do you  notice any loss of appetite?',
       'answers': [
         {'text': 'Yes', 'score': 10},
         {'text': 'No', 'score': 0},
@@ -34,7 +33,31 @@ class _LiverMainState extends State<LiverMain> {
       ],
     },
     {
-      'questionText': 'Do you feel irritation or dimpling of breast skin?',
+      'questionText': 'Do you feel pain in upper abdominal?',
+      'answers': [
+        {'text': 'Yes', 'score': 10},
+        {'text': 'No', 'score': 0},
+        {'text': 'Can not say', 'score': 5},
+      ],
+    },
+    {
+      'questionText': 'Do you feel nausea and vomiting like more often?',
+      'answers': [
+        {'text': 'Yes', 'score': 10},
+        {'text': 'No', 'score': 0},
+        {'text': 'Can not say', 'score': 5},
+      ],
+    },
+    {
+      'questionText': 'Do you feel general weakness and fatigue?',
+      'answers': [
+        {'text': 'Yes', 'score': 10},
+        {'text': 'No', 'score': 0},
+        {'text': 'Can not say', 'score': 5},
+      ],
+    },
+    {
+      'questionText': 'Do you notice abdominal swelling?',
       'answers': [
         {'text': 'Yes', 'score': 10},
         {'text': 'No', 'score': 0},
@@ -43,7 +66,7 @@ class _LiverMainState extends State<LiverMain> {
     },
     {
       'questionText':
-          'Do you notice redness or flaky skin in the nipple area or the breast?',
+          'Do you notice yellow discoloration of your skin and the whites of your eyes (jaundice)?',
       'answers': [
         {'text': 'Yes', 'score': 10},
         {'text': 'No', 'score': 0},
@@ -51,34 +74,7 @@ class _LiverMainState extends State<LiverMain> {
       ],
     },
     {
-      'questionText':
-          'Do you feel any pulling in of the nipple or pain in the nipple area?',
-      'answers': [
-        {'text': 'Yes', 'score': 10},
-        {'text': 'No', 'score': 0},
-        {'text': 'Can not say', 'score': 5},
-      ],
-    },
-    {
-      'questionText':
-          'Do you notice nipple discharge other than breast milk, including blood?',
-      'answers': [
-        {'text': 'Yes', 'score': 10},
-        {'text': 'No', 'score': 0},
-        {'text': 'Can not say', 'score': 5},
-      ],
-    },
-    {
-      'questionText':
-          'Do you notice any change in the size or the shape of the breast.?',
-      'answers': [
-        {'text': 'Yes', 'score': 10},
-        {'text': 'No', 'score': 0},
-        {'text': 'Can not say', 'score': 5},
-      ],
-    },
-    {
-      'questionText': 'Do you feel pain any area of the breast?',
+      'questionText': 'Do you have white, chalky stools?',
       'answers': [
         {'text': 'Yes', 'score': 10},
         {'text': 'No', 'score': 0},
@@ -119,13 +115,16 @@ class _LiverMainState extends State<LiverMain> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(65.0),
+          preferredSize: Size.fromHeight(60.0),
           child: AppBar(
             backgroundColor: Colors.purple,
             title: Center(
               child: Text(
-                "Quiz for breast Cancer",
-                style: TextStyle(fontSize: 27.0),
+                "Quiz for Liver Cancer",
+                style: TextStyle(
+                    color: Colors.yellow,
+                    fontSize: 30.0,
+                    fontFamily: 'Nexa-Bold'),
               ),
             ),
           ),

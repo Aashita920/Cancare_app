@@ -55,6 +55,7 @@ class BladderStory extends StatelessWidget {
                           style: TextStyle(
                               color: Color.fromARGB(255, 222, 62, 13),
                               fontWeight: FontWeight.w500,
+                              fontFamily: 'Nexa-Bold',
                               fontSize: 18),
                         ),
                       ),
@@ -83,7 +84,7 @@ class BladderStory extends StatelessWidget {
                           "\n Her treatment began in September 2013 and went on till April 2014. Anni says that this eight-month period was not without its challenges. Treating cancer takes time. It’s not a one-day surgery or a 10-day course of treatment. It’s a long drawn out period of treatment and recovery, and the side effects can go on for years. I would be lying if I said that it was an easy phase and that I could go through it again. After the surgery to remove the lump in her breast, Anni was prescribed six cycles of chemotherapy every 21 days, following which she had to undergo 36 sessions of radiation. “I still have to go for frequent follow-up tests. Cancer can recur in the first two years after recovery, and there is a continued risk for up to five years.",
                           style: TextStyle(
                               color: Color.fromARGB(255, 222, 62, 13),
-                              fontWeight: FontWeight.w500,
+                              fontFamily: 'Nexa-Bold',
                               fontSize: 18),
                         ),
                       ),

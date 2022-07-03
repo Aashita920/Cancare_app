@@ -1,6 +1,9 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'package:cancare_app/liver/liverCauses.dart';
+import 'package:cancare_app/liver/liverHospital.dart';
 import 'package:cancare_app/liver/liverKnow.dart';
+import 'package:cancare_app/liver/liverStories.dart';
 import 'package:cancare_app/liver/liverSymptom.dart';
 import 'package:flutter/material.dart';
 import '../homepages/main.dart';
@@ -20,13 +23,16 @@ class _LiverState extends State<Liver> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
           appBar: PreferredSize(
-            preferredSize: Size.fromHeight(70.0),
+            preferredSize: Size.fromHeight(60.0),
             child: AppBar(
               backgroundColor: Colors.purple,
               title: Center(
                 child: Text(
                   "Liver Cancer",
-                  style: TextStyle(color: Colors.yellow, fontSize: 35.0),
+                  style: TextStyle(
+                      color: Colors.yellow,
+                      fontSize: 30.0,
+                      fontFamily: 'Nexa-Bold'),
                 ),
               ),
             ),
@@ -45,7 +51,7 @@ class _LiverState extends State<Liver> {
                       );
                     },
                     style: ElevatedButton.styleFrom(
-                        primary: Color.fromARGB(255, 155, 45, 174)),
+                        primary: Color.fromARGB(128, 116, 31, 40)),
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
@@ -61,9 +67,7 @@ class _LiverState extends State<Liver> {
                             Text(
                               "Know About",
                               style: TextStyle(
-                                  color: Colors.yellow,
-                                  fontSize: 20.0,
-                                  fontWeight: FontWeight.w700),
+                                  fontSize: 20.0, fontWeight: FontWeight.w700),
                             ),
                           ],
                         ),
@@ -82,7 +86,7 @@ class _LiverState extends State<Liver> {
                       );
                     },
                     style: ElevatedButton.styleFrom(
-                        primary: Color.fromARGB(255, 155, 45, 174)),
+                        primary: Color.fromARGB(128, 116, 31, 40)),
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
@@ -98,9 +102,7 @@ class _LiverState extends State<Liver> {
                             Text(
                               "Symptoms",
                               style: TextStyle(
-                                  color: Colors.yellow,
-                                  fontSize: 20.0,
-                                  fontWeight: FontWeight.w700),
+                                  fontSize: 20.0, fontWeight: FontWeight.w700),
                             ),
                           ],
                         ),
@@ -120,11 +122,11 @@ class _LiverState extends State<Liver> {
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => LiverKnow()),
+                        MaterialPageRoute(builder: (context) => LiverCauses()),
                       );
                     },
                     style: ElevatedButton.styleFrom(
-                        primary: Color.fromARGB(255, 155, 45, 174)),
+                        primary: Color.fromARGB(128, 116, 31, 40)),
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
@@ -140,9 +142,7 @@ class _LiverState extends State<Liver> {
                             Text(
                               "Causes",
                               style: TextStyle(
-                                  color: Colors.yellow,
-                                  fontSize: 20.0,
-                                  fontWeight: FontWeight.w700),
+                                  fontSize: 20.0, fontWeight: FontWeight.w700),
                             ),
                           ],
                         ),
@@ -157,11 +157,12 @@ class _LiverState extends State<Liver> {
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => LiverKnow()),
+                        MaterialPageRoute(
+                            builder: (context) => LiverHospital()),
                       );
                     },
                     style: ElevatedButton.styleFrom(
-                        primary: Color.fromARGB(255, 155, 45, 174)),
+                        primary: Color.fromARGB(128, 116, 31, 40)),
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
@@ -177,9 +178,7 @@ class _LiverState extends State<Liver> {
                             Text(
                               "Hospitals",
                               style: TextStyle(
-                                  color: Colors.yellow,
-                                  fontSize: 20.0,
-                                  fontWeight: FontWeight.w700),
+                                  fontSize: 20.0, fontWeight: FontWeight.w700),
                             ),
                           ],
                         ),
@@ -204,11 +203,11 @@ class _LiverState extends State<Liver> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => LiverKnow()),
+                                builder: (context) => LiverStory()),
                           );
                         },
                         style: ElevatedButton.styleFrom(
-                            primary: Color.fromARGB(255, 155, 45, 174)),
+                            primary: Color.fromARGB(128, 116, 31, 40)),
                         child: Row(
                           mainAxisSize: MainAxisSize.min,
                           children: [
@@ -225,7 +224,6 @@ class _LiverState extends State<Liver> {
                                 Text(
                                   "Stories",
                                   style: TextStyle(
-                                      color: Colors.yellow,
                                       fontSize: 20.0,
                                       fontWeight: FontWeight.w700),
                                 ),
@@ -251,14 +249,13 @@ class _LiverState extends State<Liver> {
                             );
                           },
                           style: ElevatedButton.styleFrom(
-                              primary: Color.fromARGB(255, 155, 45, 174)),
+                              primary: Color.fromARGB(128, 116, 31, 40)),
                           child: Row(
                             mainAxisSize: MainAxisSize.min,
                             children: [
                               Icon(
                                 Icons.navigate_before,
                                 size: 30.0,
-                                color: Colors.yellow,
                               ),
                               SizedBox(
                                 width: 7,
@@ -266,7 +263,8 @@ class _LiverState extends State<Liver> {
                               Text(
                                 "Types",
                                 style: TextStyle(
-                                    fontSize: 27.0, color: Colors.yellow),
+                                  fontSize: 27.0,
+                                ),
                               ),
                             ],
                           ),
@@ -282,22 +280,20 @@ class _LiverState extends State<Liver> {
                             );
                           },
                           style: ElevatedButton.styleFrom(
-                              primary: Color.fromARGB(255, 155, 45, 174)),
+                              primary: Color.fromARGB(128, 116, 31, 40)),
                           child: Row(
                             mainAxisSize: MainAxisSize.min,
                             children: [
                               Icon(
                                 Icons.navigate_before,
                                 size: 30.0,
-                                color: Colors.yellow,
                               ),
                               SizedBox(
                                 width: 7,
                               ),
                               Text(
                                 "Home",
-                                style: TextStyle(
-                                    fontSize: 27.0, color: Colors.yellow),
+                                style: TextStyle(fontSize: 27.0),
                               ),
                             ],
                           ),

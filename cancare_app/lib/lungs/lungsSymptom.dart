@@ -3,6 +3,7 @@
 import 'package:cancare_app/bladder/bladder.dart';
 import 'package:cancare_app/homepages/types.dart';
 import 'package:cancare_app/liver/liver_main.dart';
+import 'package:cancare_app/lungs/lungs.dart';
 import 'package:cancare_app/lungs/lungs_main.dart';
 import 'package:flutter/material.dart';
 
@@ -15,16 +16,16 @@ class LungsSymptom extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(70.0),
+          preferredSize: Size.fromHeight(60.0),
           child: AppBar(
             backgroundColor: Colors.purple,
             title: Center(
               child: Text(
-                "Kidney Cancer - Symptoms",
+                "Symptoms",
                 style: TextStyle(
                     color: Colors.yellow,
-                    fontSize: 22.0,
-                    fontWeight: FontWeight.w600),
+                    fontSize: 30.0,
+                    fontFamily: 'Nexa-Bold'),
               ),
             ),
           ),
@@ -40,7 +41,7 @@ class LungsSymptom extends StatelessWidget {
                   width: MediaQuery.of(context).size.width * 0.90,
                   child: Center(
                     child: Text(
-                      "a) New lump in the breast or underarm (armpit). \n\nb) Thickening or swelling of part of the breast. \n\nc) Irritation or dimpling of breast skin. \n\nd) Redness or flaky skin in the nipple area or the breast. \n\ne) Pulling in of the nipple or pain in the nipple area. \n\nf) Nipple discharge other than breast milk, including blood. \n\ng) Any change in the size or the shape of the breast. \n\nh) Pain any area of the breast.",
+                      "a) A cough that does not go away or gets worse\n\nb) Coughing up blood or rust-colored sputum (spit or phlegm).\n\nc) Chest pain that is often worse with deep breathing, coughing, or laughing.\n\nd) Hoarseness.\n\ne) Loss of appetite\n\nf) Unexplained weight loss\n\ng) Shortness of breath\n\nh) Feeling tired or weak\n\ni) Infections such as bronchitis and pneumonia that don’t go away or keep coming back\n\nj) New onset of wheezing",
                       style: TextStyle(
                           fontSize: 24,
                           fontWeight: FontWeight.w500,
@@ -76,7 +77,7 @@ class LungsSymptom extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => Bladder()),
+                      MaterialPageRoute(builder: (context) => Lungs()),
                     );
                   },
                   style: ElevatedButton.styleFrom(

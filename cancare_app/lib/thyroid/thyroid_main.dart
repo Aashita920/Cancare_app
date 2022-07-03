@@ -17,7 +17,8 @@ class _ThyroidMainState extends State<ThyroidMain> {
 
   final _questions = const [
     {
-      'questionText': 'Do you feel new lump in the breast or underarm?',
+      'questionText':
+          'Do you feel A lump (nodule) that can be felt through the skin on your neck?',
       'answers': [
         {'text': 'Yes', 'score': 10},
         {'text': 'No', 'score': 0},
@@ -26,7 +27,7 @@ class _ThyroidMainState extends State<ThyroidMain> {
     },
     {
       'questionText':
-          'Do you  notice any thickening or swelling of part of the breast?',
+          'Do you  have a feeling that close-fitting shirt collars are becoming too tight?',
       'answers': [
         {'text': 'Yes', 'score': 10},
         {'text': 'No', 'score': 0},
@@ -34,16 +35,8 @@ class _ThyroidMainState extends State<ThyroidMain> {
       ],
     },
     {
-      'questionText': 'Do you feel irritation or dimpling of breast skin?',
-      'answers': [
-        {'text': 'Yes', 'score': 10},
-        {'text': 'No', 'score': 0},
-        {'text': 'Can not say', 'score': 5},
-      ],
-    },
-    {
       'questionText':
-          'Do you notice redness or flaky skin in the nipple area or the breast?',
+          'Do you notice changes to your voice, including increasing hoarseness?',
       'answers': [
         {'text': 'Yes', 'score': 10},
         {'text': 'No', 'score': 0},
@@ -51,8 +44,7 @@ class _ThyroidMainState extends State<ThyroidMain> {
       ],
     },
     {
-      'questionText':
-          'Do you feel any pulling in of the nipple or pain in the nipple area?',
+      'questionText': 'Do you face difficulty swallowing?',
       'answers': [
         {'text': 'Yes', 'score': 10},
         {'text': 'No', 'score': 0},
@@ -60,8 +52,7 @@ class _ThyroidMainState extends State<ThyroidMain> {
       ],
     },
     {
-      'questionText':
-          'Do you notice nipple discharge other than breast milk, including blood?',
+      'questionText': 'Do you feel swollen lymph nodes in your neck?',
       'answers': [
         {'text': 'Yes', 'score': 10},
         {'text': 'No', 'score': 0},
@@ -69,16 +60,7 @@ class _ThyroidMainState extends State<ThyroidMain> {
       ],
     },
     {
-      'questionText':
-          'Do you notice any change in the size or the shape of the breast.?',
-      'answers': [
-        {'text': 'Yes', 'score': 10},
-        {'text': 'No', 'score': 0},
-        {'text': 'Can not say', 'score': 5},
-      ],
-    },
-    {
-      'questionText': 'Do you feel pain any area of the breast?',
+      'questionText': 'Do you feel pain in your neck and throat?',
       'answers': [
         {'text': 'Yes', 'score': 10},
         {'text': 'No', 'score': 0},
@@ -119,13 +101,16 @@ class _ThyroidMainState extends State<ThyroidMain> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(65.0),
+          preferredSize: Size.fromHeight(60.0),
           child: AppBar(
             backgroundColor: Colors.purple,
             title: Center(
               child: Text(
-                "Quiz for breast Cancer",
-                style: TextStyle(fontSize: 27.0),
+                "Quiz For Thyroid Cancer",
+                style: TextStyle(
+                    color: Colors.yellow,
+                    fontSize: 30.0,
+                    fontFamily: 'Nexa-Bold'),
               ),
             ),
           ),

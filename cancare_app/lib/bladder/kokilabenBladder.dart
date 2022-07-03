@@ -25,7 +25,7 @@ class _KokilabenbladderState extends State<Kokilabenbladder> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(fontFamily: 'Nexa'),
+      theme: ThemeData(fontFamily: 'Nexa-Bold'),
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: PreferredSize(
@@ -63,7 +63,7 @@ class _KokilabenbladderState extends State<Kokilabenbladder> {
                 SizedBox(
                   width: MediaQuery.of(context).size.width * 0.9,
                   child: Text(
-                    " Kokilaben Dhirubhai Ambani Hospital, besides conducting various health camps at different locations, also holds several teaching programmes for lay people in first aid, life support and various areas of public health importance as a part of community outreach activities. Furthermore, Kokilaben Hospital has been supporting the initiative of helping the babies and children affected by congenital heart disorders through the 'Precious Heart' foundation – a social initiative that presents you with an opportunity to save a little heart, and to give someone a chance to live again.",
+                    "Kokilaben Dhirubhai Ambani Hospital, besides conducting various health camps at different locations, also holds several teaching programmes for lay people in first aid, life support and various areas of public health importance as a part of community outreach activities. Furthermore, Kokilaben Hospital has been supporting the initiative of helping the babies and children affected by congenital heart disorders through the 'Precious Heart' foundation – a social initiative that presents you with an opportunity to save a little heart, and to give someone a chance to live again.",
                     style: TextStyle(
                         color: Color.fromARGB(255, 222, 62, 13),
                         fontWeight: FontWeight.w500,

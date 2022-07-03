@@ -17,7 +17,16 @@ class _SkinMainState extends State<SkinMain> {
 
   final _questions = const [
     {
-      'questionText': 'Do you feel new lump in the breast or underarm?',
+      'questionText':
+          'Do you notice new or unusual growths, or changes in the size?',
+      'answers': [
+        {'text': 'Yes', 'score': 10},
+        {'text': 'No', 'score': 0},
+        {'text': 'Can not say', 'score': 2},
+      ],
+    },
+    {
+      'questionText': 'Do you  feel irritation or buring sensation in sun?',
       'answers': [
         {'text': 'Yes', 'score': 10},
         {'text': 'No', 'score': 0},
@@ -26,15 +35,7 @@ class _SkinMainState extends State<SkinMain> {
     },
     {
       'questionText':
-          'Do you  notice any thickening or swelling of part of the breast?',
-      'answers': [
-        {'text': 'Yes', 'score': 10},
-        {'text': 'No', 'score': 0},
-        {'text': 'Can not say', 'score': 2},
-      ],
-    },
-    {
-      'questionText': 'Do you feel irritation or dimpling of breast skin?',
+          'Do you notice any irregular or jagged borders of a mole or spot?',
       'answers': [
         {'text': 'Yes', 'score': 10},
         {'text': 'No', 'score': 0},
@@ -42,43 +43,7 @@ class _SkinMainState extends State<SkinMain> {
       ],
     },
     {
-      'questionText':
-          'Do you notice redness or flaky skin in the nipple area or the breast?',
-      'answers': [
-        {'text': 'Yes', 'score': 10},
-        {'text': 'No', 'score': 0},
-        {'text': 'Can not say', 'score': 5},
-      ],
-    },
-    {
-      'questionText':
-          'Do you feel any pulling in of the nipple or pain in the nipple area?',
-      'answers': [
-        {'text': 'Yes', 'score': 10},
-        {'text': 'No', 'score': 0},
-        {'text': 'Can not say', 'score': 5},
-      ],
-    },
-    {
-      'questionText':
-          'Do you notice nipple discharge other than breast milk, including blood?',
-      'answers': [
-        {'text': 'Yes', 'score': 10},
-        {'text': 'No', 'score': 0},
-        {'text': 'Can not say', 'score': 5},
-      ],
-    },
-    {
-      'questionText':
-          'Do you notice any change in the size or the shape of the breast.?',
-      'answers': [
-        {'text': 'Yes', 'score': 10},
-        {'text': 'No', 'score': 0},
-        {'text': 'Can not say', 'score': 5},
-      ],
-    },
-    {
-      'questionText': 'Do you feel pain any area of the breast?',
+      'questionText': 'Do you notice redness or uneven color of any mole?',
       'answers': [
         {'text': 'Yes', 'score': 10},
         {'text': 'No', 'score': 0},
@@ -119,13 +84,16 @@ class _SkinMainState extends State<SkinMain> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(65.0),
+          preferredSize: Size.fromHeight(60.0),
           child: AppBar(
             backgroundColor: Colors.purple,
             title: Center(
               child: Text(
-                "Quiz for breast Cancer",
-                style: TextStyle(fontSize: 27.0),
+                "Quiz for Skin Cancer",
+                style: TextStyle(
+                    color: Colors.yellow,
+                    fontSize: 30.0,
+                    fontFamily: 'Nexa-Bold'),
               ),
             ),
           ),

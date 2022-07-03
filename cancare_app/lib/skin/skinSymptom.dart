@@ -3,6 +3,7 @@
 import 'package:cancare_app/homepages/types.dart';
 import 'package:cancare_app/neck/neck.dart';
 import 'package:cancare_app/neck/neck_main.dart';
+import 'package:cancare_app/skin/skin.dart';
 import 'package:cancare_app/skin/skin_main.dart';
 import 'package:flutter/material.dart';
 
@@ -15,16 +16,16 @@ class SkinSymptom extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(70.0),
+          preferredSize: Size.fromHeight(60.0),
           child: AppBar(
             backgroundColor: Colors.purple,
             title: Center(
               child: Text(
-                "Kidney Cancer - Symptoms",
+                "Symptoms",
                 style: TextStyle(
                     color: Colors.yellow,
-                    fontSize: 22.0,
-                    fontWeight: FontWeight.w600),
+                    fontSize: 30.0,
+                    fontFamily: 'Nexa-Bold'),
               ),
             ),
           ),
@@ -40,7 +41,7 @@ class SkinSymptom extends StatelessWidget {
                   width: MediaQuery.of(context).size.width * 0.90,
                   child: Center(
                     child: Text(
-                      "a) New lump in the breast or underarm (armpit). \n\nb) Thickening or swelling of part of the breast. \n\nc) Irritation or dimpling of breast skin. \n\nd) Redness or flaky skin in the nipple area or the breast. \n\ne) Pulling in of the nipple or pain in the nipple area. \n\nf) Nipple discharge other than breast milk, including blood. \n\ng) Any change in the size or the shape of the breast. \n\nh) Pain any area of the breast.",
+                      "Regular examination of the skin for any new or unusual growths, or changes in the size, shape or color of an existing spot, is key to finding and treating skin cancers early. If you find anything suspicious, you should discuss it with your primary care physician or a dermatologist. While many skin cancers develop in areas exposed to the sun, they may also develop in areas that are usually hidden from the sun. It is important to examine all of these areas. In addition to examining the legs, trunk, arms, face and neck, it is important to look for signs of skin cancer in the areas between the toes, underneath nails, palms of the hands and soles of the feet, genitals and even the eyes.",
                       style: TextStyle(
                           fontSize: 24,
                           fontWeight: FontWeight.w500,
@@ -76,7 +77,7 @@ class SkinSymptom extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => Neck()),
+                      MaterialPageRoute(builder: (context) => Skin()),
                     );
                   },
                   style: ElevatedButton.styleFrom(

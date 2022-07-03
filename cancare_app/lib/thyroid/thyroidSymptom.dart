@@ -1,9 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, camel_case_types, file_names, unused_import
 
 import 'package:cancare_app/homepages/types.dart';
-import 'package:cancare_app/neck/neck.dart';
-import 'package:cancare_app/neck/neck_main.dart';
-import 'package:cancare_app/skin/skin_main.dart';
 import 'package:cancare_app/thyroid/thyroid.dart';
 import 'package:cancare_app/thyroid/thyroid_main.dart';
 import 'package:flutter/material.dart';
@@ -17,16 +14,16 @@ class ThyroidSymptom extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(70.0),
+          preferredSize: Size.fromHeight(60.0),
           child: AppBar(
             backgroundColor: Colors.purple,
             title: Center(
               child: Text(
-                "Kidney Cancer - Symptoms",
+                "Symptoms",
                 style: TextStyle(
                     color: Colors.yellow,
-                    fontSize: 22.0,
-                    fontWeight: FontWeight.w600),
+                    fontSize: 30.0,
+                    fontFamily: 'Nexa-Bold'),
               ),
             ),
           ),
@@ -42,7 +39,7 @@ class ThyroidSymptom extends StatelessWidget {
                   width: MediaQuery.of(context).size.width * 0.90,
                   child: Center(
                     child: Text(
-                      "a) New lump in the breast or underarm (armpit). \n\nb) Thickening or swelling of part of the breast. \n\nc) Irritation or dimpling of breast skin. \n\nd) Redness or flaky skin in the nipple area or the breast. \n\ne) Pulling in of the nipple or pain in the nipple area. \n\nf) Nipple discharge other than breast milk, including blood. \n\ng) Any change in the size or the shape of the breast. \n\nh) Pain any area of the breast.",
+                      "a) A lump (nodule) that can be felt through the skin on your neck\n\nb) A lump (nodule) that can be felt through the skin on your neck\n\nc) A feeling that close-fitting shirt collars are becoming too tight\n\nd) Changes to your voice, including increasing hoarseness\n\ne) Difficulty swallowing\n\nf) Swollen lymph nodes in your neck\n\ng) Pain in your neck and throat",
                       style: TextStyle(
                           fontSize: 24,
                           fontWeight: FontWeight.w500,

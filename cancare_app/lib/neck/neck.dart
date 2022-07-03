@@ -1,6 +1,10 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'package:cancare_app/neck/neckCauses.dart';
+import 'package:cancare_app/neck/neckHospitals.dart';
 import 'package:cancare_app/neck/neckKnow.dart';
+import 'package:cancare_app/neck/neckStories.dart';
+import 'package:cancare_app/neck/neckSymptom.dart';
 import 'package:cancare_app/neck/neck_main.dart';
 import 'package:flutter/material.dart';
 import '../homepages/types.dart';
@@ -20,13 +24,16 @@ class _NeckState extends State<Neck> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
           appBar: PreferredSize(
-            preferredSize: Size.fromHeight(70.0),
+            preferredSize: Size.fromHeight(60.0),
             child: AppBar(
               backgroundColor: Colors.purple,
               title: Center(
                 child: Text(
                   "Neck Cancer",
-                  style: TextStyle(color: Colors.yellow, fontSize: 35.0),
+                  style: TextStyle(
+                      color: Colors.yellow,
+                      fontSize: 30.0,
+                      fontFamily: 'Nexa-Bold'),
                 ),
               ),
             ),
@@ -45,7 +52,7 @@ class _NeckState extends State<Neck> {
                       );
                     },
                     style: ElevatedButton.styleFrom(
-                        primary: Color.fromARGB(255, 155, 45, 174)),
+                        primary: Color.fromARGB(128, 116, 31, 40)),
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
@@ -61,9 +68,7 @@ class _NeckState extends State<Neck> {
                             Text(
                               "Know About",
                               style: TextStyle(
-                                  color: Colors.yellow,
-                                  fontSize: 20.0,
-                                  fontWeight: FontWeight.w700),
+                                  fontSize: 20.0, fontWeight: FontWeight.w700),
                             ),
                           ],
                         ),
@@ -78,11 +83,11 @@ class _NeckState extends State<Neck> {
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => NeckMain()),
+                        MaterialPageRoute(builder: (context) => NeckSymptom()),
                       );
                     },
                     style: ElevatedButton.styleFrom(
-                        primary: Color.fromARGB(255, 155, 45, 174)),
+                        primary: Color.fromARGB(128, 116, 31, 40)),
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
@@ -98,9 +103,7 @@ class _NeckState extends State<Neck> {
                             Text(
                               "Symptoms",
                               style: TextStyle(
-                                  color: Colors.yellow,
-                                  fontSize: 20.0,
-                                  fontWeight: FontWeight.w700),
+                                  fontSize: 20.0, fontWeight: FontWeight.w700),
                             ),
                           ],
                         ),
@@ -120,11 +123,11 @@ class _NeckState extends State<Neck> {
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => neckKnow()),
+                        MaterialPageRoute(builder: (context) => NeckCauses()),
                       );
                     },
                     style: ElevatedButton.styleFrom(
-                        primary: Color.fromARGB(255, 155, 45, 174)),
+                        primary: Color.fromARGB(128, 116, 31, 40)),
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
@@ -140,9 +143,7 @@ class _NeckState extends State<Neck> {
                             Text(
                               "Causes",
                               style: TextStyle(
-                                  color: Colors.yellow,
-                                  fontSize: 20.0,
-                                  fontWeight: FontWeight.w700),
+                                  fontSize: 20.0, fontWeight: FontWeight.w700),
                             ),
                           ],
                         ),
@@ -157,11 +158,11 @@ class _NeckState extends State<Neck> {
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => neckKnow()),
+                        MaterialPageRoute(builder: (context) => NeckHospital()),
                       );
                     },
                     style: ElevatedButton.styleFrom(
-                        primary: Color.fromARGB(255, 155, 45, 174)),
+                        primary: Color.fromARGB(128, 116, 31, 40)),
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
@@ -177,9 +178,7 @@ class _NeckState extends State<Neck> {
                             Text(
                               "Hospitals",
                               style: TextStyle(
-                                  color: Colors.yellow,
-                                  fontSize: 20.0,
-                                  fontWeight: FontWeight.w700),
+                                  fontSize: 20.0, fontWeight: FontWeight.w700),
                             ),
                           ],
                         ),
@@ -203,11 +202,12 @@ class _NeckState extends State<Neck> {
                         onPressed: () {
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => neckKnow()),
+                            MaterialPageRoute(
+                                builder: (context) => NeckStory()),
                           );
                         },
                         style: ElevatedButton.styleFrom(
-                            primary: Color.fromARGB(255, 155, 45, 174)),
+                            primary: Color.fromARGB(128, 116, 31, 40)),
                         child: Row(
                           mainAxisSize: MainAxisSize.min,
                           children: [
@@ -224,7 +224,6 @@ class _NeckState extends State<Neck> {
                                 Text(
                                   "Stories",
                                   style: TextStyle(
-                                      color: Colors.yellow,
                                       fontSize: 20.0,
                                       fontWeight: FontWeight.w700),
                                 ),
@@ -250,14 +249,13 @@ class _NeckState extends State<Neck> {
                             );
                           },
                           style: ElevatedButton.styleFrom(
-                              primary: Color.fromARGB(255, 155, 45, 174)),
+                              primary: Color.fromARGB(128, 116, 31, 40)),
                           child: Row(
                             mainAxisSize: MainAxisSize.min,
                             children: [
                               Icon(
                                 Icons.navigate_before,
                                 size: 30.0,
-                                color: Colors.yellow,
                               ),
                               SizedBox(
                                 width: 7,
@@ -265,7 +263,8 @@ class _NeckState extends State<Neck> {
                               Text(
                                 "Types",
                                 style: TextStyle(
-                                    fontSize: 27.0, color: Colors.yellow),
+                                  fontSize: 27.0,
+                                ),
                               ),
                             ],
                           ),
@@ -281,22 +280,20 @@ class _NeckState extends State<Neck> {
                             );
                           },
                           style: ElevatedButton.styleFrom(
-                              primary: Color.fromARGB(255, 155, 45, 174)),
+                              primary: Color.fromARGB(128, 116, 31, 40)),
                           child: Row(
                             mainAxisSize: MainAxisSize.min,
                             children: [
                               Icon(
                                 Icons.navigate_before,
                                 size: 30.0,
-                                color: Colors.yellow,
                               ),
                               SizedBox(
                                 width: 7,
                               ),
                               Text(
                                 "Home",
-                                style: TextStyle(
-                                    fontSize: 27.0, color: Colors.yellow),
+                                style: TextStyle(fontSize: 27.0),
                               ),
                             ],
                           ),

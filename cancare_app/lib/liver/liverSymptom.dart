@@ -2,6 +2,7 @@
 
 import 'package:cancare_app/bladder/bladder.dart';
 import 'package:cancare_app/homepages/types.dart';
+import 'package:cancare_app/liver/liver.dart';
 import 'package:cancare_app/liver/liver_main.dart';
 import 'package:flutter/material.dart';
 
@@ -14,16 +15,16 @@ class LiverSymptom extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(70.0),
+          preferredSize: Size.fromHeight(60.0),
           child: AppBar(
             backgroundColor: Colors.purple,
             title: Center(
               child: Text(
-                "Kidney Cancer - Symptoms",
+                "Symptoms",
                 style: TextStyle(
                     color: Colors.yellow,
-                    fontSize: 22.0,
-                    fontWeight: FontWeight.w600),
+                    fontSize: 30.0,
+                    fontFamily: 'Nexa-Bold'),
               ),
             ),
           ),
@@ -39,7 +40,7 @@ class LiverSymptom extends StatelessWidget {
                   width: MediaQuery.of(context).size.width * 0.90,
                   child: Center(
                     child: Text(
-                      "a) New lump in the breast or underarm (armpit). \n\nb) Thickening or swelling of part of the breast. \n\nc) Irritation or dimpling of breast skin. \n\nd) Redness or flaky skin in the nipple area or the breast. \n\ne) Pulling in of the nipple or pain in the nipple area. \n\nf) Nipple discharge other than breast milk, including blood. \n\ng) Any change in the size or the shape of the breast. \n\nh) Pain any area of the breast.",
+                      "a) Losing weight without trying \n\nb) Loss of appetite \n\nc) Upper abdominal pain. \n\nd) Nausea and vomiting.\n\ne) General weakness and fatigue\n\nf) Abdominal swelling\n\ng) Yellow discoloration of your skin and the whites of your eyes (jaundice)\n\nh) White, chalky stools",
                       style: TextStyle(
                           fontSize: 24,
                           fontWeight: FontWeight.w500,
@@ -75,7 +76,7 @@ class LiverSymptom extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => Bladder()),
+                      MaterialPageRoute(builder: (context) => Liver()),
                     );
                   },
                   style: ElevatedButton.styleFrom(

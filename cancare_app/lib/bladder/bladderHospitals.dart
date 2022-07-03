@@ -155,7 +155,9 @@ class BladderHospital extends StatelessWidget {
                             Text(
                               "Go Back",
                               style: TextStyle(
-                                  fontSize: 27.0, color: Colors.yellow),
+                                  fontSize: 27.0,
+                                  color: Colors.yellow,
+                                  fontFamily: "Nexa-Bold"),
                             ),
                           ],
                         ),

@@ -14,11 +14,13 @@ class bladderResult extends StatelessWidget {
   String get resultPhrase {
     String resultText;
     if (resultScore >= 40) {
-      resultText = 'You are likely to have Bladder Cancer';
+      // resultText = 'You are likely to have Bladder Cancer';
+      resultText = 'You have few chances of having Bladder Cancer';
     } else if (resultScore >= 20 && resultScore <= 10) {
       resultText = 'You have few chances of having Bladder Cancer';
     } else {
-      resultText = 'You have very less chances of having Bladder Cancer';
+      // resultText = 'You have very less chances of having Bladder Cancer';
+      resultText = 'You have few chances of having Bladder Cancer';
     }
     return resultText;
   }

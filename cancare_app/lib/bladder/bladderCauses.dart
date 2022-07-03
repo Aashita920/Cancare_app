@@ -43,9 +43,10 @@ class BladderCauses extends StatelessWidget {
                     child: Text(
                       "1. Having a family history of bladder cancer. \n\n2. Having certain gene mutations. \n\n3. Being exposed to too much quantity of certain workplace chemicals used in processing paint, dye, metal, and various petroleum products.\n\n4. Taking some kinds of chemotherapy drugs\n\n5. Drinking well water contaminated with arsenic. \n\n6. Taking the chinese herb Aristolochia fangchi. \n\n7. Having chronic urinary tract infection.",
                       style: TextStyle(
-                          fontSize: 24,
-                          fontWeight: FontWeight.w500,
-                          color: Color.fromARGB(255, 161, 80, 74)),
+                        fontFamily: 'Nexa-Bold',
+                        fontSize: 25,
+                        color: Color.fromARGB(255, 166, 73, 42),
+                      ),
                     ),
                   ),
                 ),
@@ -53,13 +54,13 @@ class BladderCauses extends StatelessWidget {
                 Center(
                   child: SizedBox(
                     height: MediaQuery.of(context).size.height * 0.09,
-                    width: MediaQuery.of(context).size.width * 0.35,
+                    width: MediaQuery.of(context).size.width * 0.42,
                     child: ElevatedButton(
                       child: Text('More information',
                           style: TextStyle(
                               color: Colors.yellow,
-                              fontWeight: FontWeight.w700,
-                              fontSize: 18)),
+                              fontFamily: 'Nexa-Bold',
+                              fontSize: 22)),
                       style: ElevatedButton.styleFrom(
                           primary: Color.fromARGB(255, 155, 45, 174)),
                       onPressed: () async {
@@ -94,7 +95,10 @@ class BladderCauses extends StatelessWidget {
                       ),
                       Text(
                         "Go Back",
-                        style: TextStyle(fontSize: 27.0, color: Colors.yellow),
+                        style: TextStyle(
+                            fontSize: 27.0,
+                            color: Colors.yellow,
+                            fontFamily: 'Nexa-Bold'),
                       ),
                     ],
                   ),
@@ -106,7 +110,8 @@ class BladderCauses extends StatelessWidget {
                     );
                   },
                   style: ElevatedButton.styleFrom(
-                      primary: Color.fromARGB(255, 155, 45, 174)),
+                    primary: Color.fromARGB(255, 155, 45, 174),
+                  ),
                   child: Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
@@ -120,7 +125,10 @@ class BladderCauses extends StatelessWidget {
                       ),
                       Text(
                         "Types",
-                        style: TextStyle(fontSize: 27.0, color: Colors.yellow),
+                        style: TextStyle(
+                            fontSize: 27.0,
+                            color: Colors.yellow,
+                            fontFamily: 'Nexa-Bold'),
                       ),
                     ],
                   ),

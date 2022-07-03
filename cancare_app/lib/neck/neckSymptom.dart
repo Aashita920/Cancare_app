@@ -14,16 +14,16 @@ class NeckSymptom extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(70.0),
+          preferredSize: Size.fromHeight(60.0),
           child: AppBar(
             backgroundColor: Colors.purple,
             title: Center(
               child: Text(
-                "Kidney Cancer - Symptoms",
+                "Symptoms",
                 style: TextStyle(
                     color: Colors.yellow,
-                    fontSize: 22.0,
-                    fontWeight: FontWeight.w600),
+                    fontSize: 30.0,
+                    fontFamily: 'Nexa-Bold'),
               ),
             ),
           ),
@@ -39,7 +39,7 @@ class NeckSymptom extends StatelessWidget {
                   width: MediaQuery.of(context).size.width * 0.90,
                   child: Center(
                     child: Text(
-                      "a) New lump in the breast or underarm (armpit). \n\nb) Thickening or swelling of part of the breast. \n\nc) Irritation or dimpling of breast skin. \n\nd) Redness or flaky skin in the nipple area or the breast. \n\ne) Pulling in of the nipple or pain in the nipple area. \n\nf) Nipple discharge other than breast milk, including blood. \n\ng) Any change in the size or the shape of the breast. \n\nh) Pain any area of the breast.",
+                      "a) Oral cavity. A white or red patch on the gums, the tongue, or the lining of the mouth; a growth or swelling of the jaw that causes dentures to fit poorly or become uncomfortable; and unusual bleeding or pain in the mouth. \n\nb) Throat (pharynx). Pain when swallowing; pain in the neck or the throat that does not go away; pain or ringing in the ears; or trouble hearing. \n\nc) Voice box (larynx). Trouble breathing or speaking, pain when swallowing or ear pain. \n\nd) Paranasal sinuses and nasal cavity. Sinuses that are blocked and do not clear; chronic sinus infections that do not respond to treatment with antibiotics; bleeding through the nose; frequent headaches, swelling or other trouble with the eyes; pain in the upper teeth; or problems with dentures. \n\ne) Salivary glands. Swelling under the chin or around the jawbone, numbness or paralysis of the muscles in the face, or pain in the face, the chin, or the neck that does not go away.\n",
                       style: TextStyle(
                           fontSize: 24,
                           fontWeight: FontWeight.w500,
